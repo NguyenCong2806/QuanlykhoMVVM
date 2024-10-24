@@ -1,7 +1,7 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:vm="clr-namespace:Quanlykho.ViewModel"
-                    xmlns:view="clr-namespace:Quanlykho.View">
+                    xmlns:view="clr-namespace:Quanlykho.View"
+                    xmlns:vm="clr-namespace:Quanlykho.ViewModel">
 
     <DataTemplate DataType="{x:Type vm:UnitVM}">
         <view:UnitView />
@@ -9,5 +9,31 @@
 
     <DataTemplate DataType="{x:Type vm:SuplierVM}">
         <view:SuplierView />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:CustomerVM}">
+        <view:CustomersView />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:InputInfoesVM}">
+        <view:InputInfoesView />
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:InputsVM}">
+        <view:InputsView />
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:ObjectsVM}">
+        <view:ObjectsView />
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:OutputInfoesVM}">
+        <view:OutputInfoesView />
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:OutputsVM}">
+        <view:OutputsView />
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:UserRolesVM}">
+        <view:UserRolesView />
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:UsersVM}">
+        <view:UsersView />
     </DataTemplate>
 </ResourceDictionary>
