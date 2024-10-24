@@ -3,7 +3,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:vm="clr-namespace:Quanlykho.ViewModel" xmlns:Menu="clr-namespace:Quanlykho.Utilities" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:Menu="clr-namespace:Quanlykho.Utilities"
+        xmlns:vm="clr-namespace:Quanlykho.ViewModel"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
         AllowsTransparency="True"
@@ -54,6 +55,58 @@
                                        Source="Image/img_home.png" />
                                         <TextBlock Style="{StaticResource text5}"
                                            Grid.Column="1" Text="Home" />
+                                    </Grid>
+                                </Menu:Btn>
+                                <Menu:Btn Style="{StaticResource radio_btn}" Command="{Binding UnitCommand}">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="50" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Image Style="{StaticResource image_size}"
+                                            Grid.Column="0"
+                                            Source="Image/img_setting.png" />
+                                        <TextBlock Style="{StaticResource text5}"
+                                            Grid.Column="1" Text="Đơn vị" />
+                                    </Grid>
+                                </Menu:Btn>
+                                <Menu:Btn Style="{StaticResource radio_btn}" Command="{Binding SuplierCommand}">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="50" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Image Style="{StaticResource image_size}"
+                                            Grid.Column="0"
+                                            Source="Image/img_setting.png" />
+                                        <TextBlock Style="{StaticResource text5}"
+                                            Grid.Column="1" Text="Đơn vị" />
+                                    </Grid>
+                                </Menu:Btn>
+                                <Menu:Btn Style="{StaticResource radio_btn}" Command="{Binding SuplierCommand}">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="50" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Image Style="{StaticResource image_size}"
+                                            Grid.Column="0"
+                                            Source="Image/img_setting.png" />
+                                        <TextBlock Style="{StaticResource text5}"
+                                            Grid.Column="1" Text="Đơn vị" />
+                                    </Grid>
+                                </Menu:Btn>
+                                <Menu:Btn Style="{StaticResource radio_btn}" Command="{Binding SuplierCommand}">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="50" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Image Style="{StaticResource image_size}"
+                                            Grid.Column="0"
+                                            Source="Image/img_setting.png" />
+                                        <TextBlock Style="{StaticResource text5}"
+                                            Grid.Column="1" Text="Đơn vị" />
                                     </Grid>
                                 </Menu:Btn>
                             </WrapPanel>

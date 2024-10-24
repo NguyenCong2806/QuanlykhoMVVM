@@ -118,3 +118,8 @@ F:\6. Other\QuanlykhoMVVM\Quanlykho\obj\Debug\Quanlykho.csproj.CoreCompileInputs
 F:\6. Other\QuanlykhoMVVM\Quanlykho\obj\Debug\Quanlykho.csproj.CopyComplete
 F:\6. Other\QuanlykhoMVVM\Quanlykho\obj\Debug\Quanlykho.exe
 F:\6. Other\QuanlykhoMVVM\Quanlykho\obj\Debug\Quanlykho.pdb
+F:\6. Other\QuanlykhoMVVM\Quanlykho\obj\Debug\View\InputInfoesView.baml
+F:\6. Other\QuanlykhoMVVM\Quanlykho\obj\Debug\View\InputsView.baml
+F:\6. Other\QuanlykhoMVVM\Quanlykho\obj\Debug\View\ObjectsView.baml
+F:\6. Other\QuanlykhoMVVM\Quanlykho\obj\Debug\View\OutputInfoesView.baml
+F:\6. Other\QuanlykhoMVVM\Quanlykho\obj\Debug\View\OutputsView.baml
