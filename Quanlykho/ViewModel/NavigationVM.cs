@@ -1,5 +1,5 @@
-﻿using Quanlykho.Entity;
-using Quanlykho.Utilities;
+﻿using Quanlykho.Utilities;
+using System.Threading.Tasks;
 using System.Windows.Input;
 
 namespace Quanlykho.ViewModel
@@ -25,19 +25,32 @@ namespace Quanlykho.ViewModel
         public ICommand UsersCommand { get; set; }
         public ICommand SuplierCommand { get; set; }
 
-        private void Unit(object obj) => CurrentView = new UnitVM();
+        private async Task Unit(object obj)
+        {
+            CurrentView = new UnitVM();
+            await Task.Yield();
+        }
+
         private void Customer(object obj) => CurrentView = new CustomerVM();
+
         private void InputInfoes(object obj) => CurrentView = new InputInfoesVM();
+
         private void Objects(object obj) => CurrentView = new ObjectsVM();
+
         private void OutputInfoes(object obj) => CurrentView = new OutputInfoesVM();
+
         private void Outputs(object obj) => CurrentView = new OutputsVM();
+
         private void UserRoles(object obj) => CurrentView = new UserRolesVM();
+
         private void Users(object obj) => CurrentView = new UsersVM();
+
         private void Suplier(object obj) => CurrentView = new SuplierVM();
 
         public NavigationVM()
         {
-            UnitCommand = new RelayCommand(Unit);
+            //UnitCommand = new RelayCommand(Unit);
+            UnitCommand = new AsyncRelayCommand<UnitVM>(Unit, null, null);
             SuplierCommand = new RelayCommand(Suplier);
 
             // Startup Page
