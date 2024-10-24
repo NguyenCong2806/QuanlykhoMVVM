@@ -90,14 +90,38 @@
     <Compile Include="ViewModel\UnitVM.cs" />
     <Compile Include="ViewModel\UserRolesVM.cs" />
     <Compile Include="ViewModel\UsersVM.cs" />
+    <Compile Include="View\CustomersView.xaml.cs">
+      <DependentUpon>CustomersView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\CustomerView.xaml.cs">
       <DependentUpon>CustomerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\InputInfoesView.xaml.cs">
+      <DependentUpon>InputInfoesView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\InputsView.xaml.cs">
+      <DependentUpon>InputsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ObjectsView.xaml.cs">
+      <DependentUpon>ObjectsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\OutputInfoesView.xaml.cs">
+      <DependentUpon>OutputInfoesView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\OutputsView.xaml.cs">
+      <DependentUpon>OutputsView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\SuplierView.xaml.cs">
       <DependentUpon>SuplierView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\UnitView.xaml.cs">
       <DependentUpon>UnitView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserRolesView.xaml.cs">
+      <DependentUpon>UserRolesView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UsersView.xaml.cs">
+      <DependentUpon>UsersView.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -168,29 +192,33 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\CustomersView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\CustomerView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\InputInfoesView.xaml">
       <SubType>Designer</SubType>
-      <Generator>XamlIntelliSenseFileGenerator</Generator>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\InputsView.xaml">
       <SubType>Designer</SubType>
-      <Generator>XamlIntelliSenseFileGenerator</Generator>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\ObjectsView.xaml">
       <SubType>Designer</SubType>
-      <Generator>XamlIntelliSenseFileGenerator</Generator>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\OutputInfoesView.xaml">
       <SubType>Designer</SubType>
-      <Generator>XamlIntelliSenseFileGenerator</Generator>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\OutputsView.xaml">
       <SubType>Designer</SubType>
-      <Generator>XamlIntelliSenseFileGenerator</Generator>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\SuplierView.xaml">
       <SubType>Designer</SubType>
@@ -200,7 +228,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\UserRoles.xaml">
+    <Page Include="View\UserRolesView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
