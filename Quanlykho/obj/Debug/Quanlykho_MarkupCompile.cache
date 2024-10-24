@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 F:\6. Other\QuanlykhoMVVM\Quanlykho\App.xaml
-12-821572196
+141083671639
 2-1052707305
-35-1299057386
+36913821292
 21-889558599
-MainWindow.xaml;Style\Menu.xaml;Style\Sliderbar.xaml;Utilities\DataTemplate.xaml;View\CustomerView.xaml;View\InputInfoesView.xaml;View\InputsView.xaml;View\ObjectsView.xaml;View\OutputInfoesView.xaml;View\OutputsView.xaml;View\SuplierView.xaml;View\UnitView.xaml;
+MainWindow.xaml;Style\Menu.xaml;Style\Sliderbar.xaml;Utilities\DataTemplate.xaml;View\CustomerView.xaml;View\InputInfoesView.xaml;View\InputsView.xaml;View\ObjectsView.xaml;View\OutputInfoesView.xaml;View\OutputsView.xaml;View\SuplierView.xaml;View\UnitView.xaml;View\UserRoles.xaml;View\UsersView.xaml;
 
-False
+True
 
