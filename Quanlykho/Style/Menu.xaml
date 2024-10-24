@@ -24,10 +24,10 @@
                         Width="228"
                         BorderThickness="0">
 
-                        <Border.Background>
+                        <!--<Border.Background>
                             <SolidColorBrush x:Name="BorderBackground"
                                          Color="#003300" />
-                        </Border.Background>
+                        </Border.Background>-->
 
                         <Grid>
 
