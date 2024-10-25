@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Net;
 using System.Threading.Tasks;
 
@@ -29,36 +30,93 @@ namespace Quanlykho.Repositorys
             {
                 throw new System.NotImplementedException(ex.Message);
             }
+            finally
+            {
+                Dispose();
+            }
         }
 
         public void AddRange(IEnumerable<T> entities)
         {
             throw new System.NotImplementedException();
         }
-
-        public Task DeleteAsync(int id)
+        public async Task DeleteAsync(T entity)
         {
-            throw new System.NotImplementedException();
+            try
+            {
+                _table.Remove(entity);
+                await SaveAsync();
+            }
+            catch (Exception ex)
+            {
+                throw new System.NotImplementedException(ex.Message);
+            }
+            finally
+            {
+                Dispose();
+            }
         }
 
-        public void DeleteAsync(T entity)
+        public async Task DeleteAsync(Expression<Func<T, bool>> predicate)
         {
-            throw new System.NotImplementedException();
+            try
+            {
+                var data = await GetValueAsync(predicate);
+                _table.Remove(data);
+                await SaveAsync();
+            }
+            catch (Exception ex)
+            {
+                throw new System.NotImplementedException(ex.Message);
+            }
+            finally
+            {
+                Dispose();
+            }
         }
 
-        public Task<IQueryable<T>> GetAllAsync()
+        public void Dispose()
         {
-            throw new System.NotImplementedException();
+            _context.Dispose();
         }
 
-        public Task<T> GetValueAsync(int id)
+        public async Task<IQueryable<T>> GetAllAsync()
         {
-            throw new System.NotImplementedException();
+            try
+            {
+                var data = await _table.ToListAsync();
+                return data.AsQueryable<T>();
+            }
+            catch (Exception ex)
+            {
+                throw new System.NotImplementedException(ex.Message);
+            }
+            finally
+            {
+                Dispose();
+            }
+        }
+
+        public async Task<T> GetValueAsync(Expression<Func<T, bool>> predicate)
+        {
+            try
+            {
+                return await _table.FirstOrDefaultAsync<T>(predicate);
+            }
+            catch (Exception ex)
+            {
+                throw new System.NotImplementedException(ex.Message);
+            }
+            finally
+            {
+                Dispose();
+            }
         }
 
         public async Task<int> SaveAsync()
         {
             await _context.SaveChangesAsync();
+        
             return (int)HttpStatusCode.OK;
         }
 
