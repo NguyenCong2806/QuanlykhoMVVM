@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "F:\\4. wpf\\QuanlykhoMVVM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|F:\\4. wpf\\QuanlykhoMVVM\\quanlykho\\viewmodel\\navigationvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|f:\\4. wpf\\quanlykhomvvm\\quanlykho\\viewmodel\\navigationvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|solutionrelative:quanlykho\\viewmodel\\navigationvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|f:\\4. wpf\\quanlykhomvvm\\quanlykho\\utilities\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|solutionrelative:quanlykho\\utilities\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|f:\\4. wpf\\quanlykhomvvm\\quanlykho\\viewmodel\\homevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|solutionrelative:quanlykho\\viewmodel\\homevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|f:\\4. wpf\\quanlykhomvvm\\quanlykho\\utilities\\asyncrelaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|solutionrelative:quanlykho\\utilities\\asyncrelaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|f:\\4. wpf\\quanlykhomvvm\\quanlykho\\view\\customerview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|solutionrelative:quanlykho\\view\\customerview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|F:\\4. wpf\\QuanlykhoMVVM\\quanlykho\\utilities\\asynccommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|solutionrelative:quanlykho\\utilities\\asynccommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|f:\\4. wpf\\quanlykhomvvm\\quanlykho\\view\\homeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|solutionrelative:quanlykho\\view\\homeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|F:\\4. wpf\\QuanlykhoMVVM\\quanlykho\\interfaces\\iasynccommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|solutionrelative:quanlykho\\interfaces\\iasynccommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|f:\\4. wpf\\quanlykhomvvm\\quanlykho\\view\\unitview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|solutionrelative:quanlykho\\view\\unitview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|f:\\4. wpf\\quanlykhomvvm\\quanlykho\\utilities\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|solutionrelative:quanlykho\\utilities\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|f:\\4. wpf\\quanlykhomvvm\\quanlykho\\view\\inputsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|solutionrelative:quanlykho\\view\\inputsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|f:\\4. wpf\\quanlykhomvvm\\quanlykho\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|solutionrelative:quanlykho\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,32 +38,67 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AsyncCommand.cs",
-              "DocumentMoniker": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\Utilities\\AsyncCommand.cs",
-              "RelativeDocumentMoniker": "Quanlykho\\Utilities\\AsyncCommand.cs",
-              "ToolTip": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\Utilities\\AsyncCommand.cs",
-              "RelativeToolTip": "Quanlykho\\Utilities\\AsyncCommand.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAADwvxYAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "HomeVM.cs",
+              "DocumentMoniker": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\ViewModel\\HomeVM.cs",
+              "RelativeDocumentMoniker": "Quanlykho\\ViewModel\\HomeVM.cs",
+              "ToolTip": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\ViewModel\\HomeVM.cs",
+              "RelativeToolTip": "Quanlykho\\ViewModel\\HomeVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T16:16:53.401Z",
+              "WhenOpened": "2024-10-25T00:02:30.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UnitView.xaml",
+              "DocumentMoniker": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\View\\UnitView.xaml",
+              "RelativeDocumentMoniker": "Quanlykho\\View\\UnitView.xaml",
+              "ToolTip": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\View\\UnitView.xaml",
+              "RelativeToolTip": "Quanlykho\\View\\UnitView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-25T00:01:24.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "InputsView.xaml",
+              "DocumentMoniker": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\View\\InputsView.xaml",
+              "RelativeDocumentMoniker": "Quanlykho\\View\\InputsView.xaml",
+              "ToolTip": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\View\\InputsView.xaml",
+              "RelativeToolTip": "Quanlykho\\View\\InputsView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-25T00:01:21.866Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AsyncRelayCommand.cs",
-              "DocumentMoniker": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\Utilities\\AsyncRelayCommand.cs",
-              "RelativeDocumentMoniker": "Quanlykho\\Utilities\\AsyncRelayCommand.cs",
-              "ToolTip": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\Utilities\\AsyncRelayCommand.cs",
-              "RelativeToolTip": "Quanlykho\\Utilities\\AsyncRelayCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T16:14:41.59Z",
+              "Title": "CustomerView.xaml",
+              "DocumentMoniker": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\View\\CustomerView.xaml",
+              "RelativeDocumentMoniker": "Quanlykho\\View\\CustomerView.xaml",
+              "ToolTip": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\View\\CustomerView.xaml",
+              "RelativeToolTip": "Quanlykho\\View\\CustomerView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-25T00:01:18.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeView.xaml",
+              "DocumentMoniker": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\View\\HomeView.xaml",
+              "RelativeDocumentMoniker": "Quanlykho\\View\\HomeView.xaml",
+              "ToolTip": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\View\\HomeView.xaml",
+              "RelativeToolTip": "Quanlykho\\View\\HomeView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-25T00:01:14.782Z",
               "EditorCaption": ""
             },
             {
@@ -70,69 +109,21 @@
               "RelativeDocumentMoniker": "Quanlykho\\ViewModel\\NavigationVM.cs",
               "ToolTip": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\ViewModel\\NavigationVM.cs",
               "RelativeToolTip": "Quanlykho\\ViewModel\\NavigationVM.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAuwB0AAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAwwGAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T16:14:07.431Z",
+              "WhenOpened": "2024-10-25T00:00:30.423Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ViewModelBase.cs",
-              "DocumentMoniker": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\Utilities\\ViewModelBase.cs",
-              "RelativeDocumentMoniker": "Quanlykho\\Utilities\\ViewModelBase.cs",
-              "ToolTip": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\Utilities\\ViewModelBase.cs",
-              "RelativeToolTip": "Quanlykho\\Utilities\\ViewModelBase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T16:28:54.52Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IAsyncCommand.cs",
-              "DocumentMoniker": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\Interfaces\\IAsyncCommand.cs",
-              "RelativeDocumentMoniker": "Quanlykho\\Interfaces\\IAsyncCommand.cs",
-              "ToolTip": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\Interfaces\\IAsyncCommand.cs",
-              "RelativeToolTip": "Quanlykho\\Interfaces\\IAsyncCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T16:17:04.424Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "06c016d3-ec45-4304-897d-24f0747851c9",
-        "Display": 1,
-        "X": 526,
-        "Y": 222,
-        "Width": 1233,
-        "Height": 777,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RelayCommand.cs",
-              "DocumentMoniker": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\Utilities\\RelayCommand.cs",
-              "RelativeDocumentMoniker": "Quanlykho\\Utilities\\RelayCommand.cs",
-              "ToolTip": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\Utilities\\RelayCommand.cs",
-              "RelativeToolTip": "Quanlykho\\Utilities\\RelayCommand.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T16:17:09.671Z",
+              "DocumentIndex": 6,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Quanlykho\\MainWindow.xaml",
+              "ToolTip": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\MainWindow.xaml",
+              "RelativeToolTip": "Quanlykho\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-24T23:44:44.798Z",
               "EditorCaption": ""
             }
           ]
