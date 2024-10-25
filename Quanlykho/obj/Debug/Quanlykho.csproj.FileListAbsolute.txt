@@ -155,3 +155,8 @@ F:\4. wpf\QuanlykhoMVVM\Quanlykho\bin\Debug\log4net.pdb
 F:\4. wpf\QuanlykhoMVVM\Quanlykho\bin\Debug\log4net.xml
 F:\4. wpf\QuanlykhoMVVM\Quanlykho\obj\Debug\View\HomeView.g.cs
 F:\4. wpf\QuanlykhoMVVM\Quanlykho\obj\Debug\View\HomeView.baml
+F:\6. Other\QuanlykhoMVVM\Quanlykho\bin\Debug\log4net.dll
+F:\6. Other\QuanlykhoMVVM\Quanlykho\bin\Debug\log4net.pdb
+F:\6. Other\QuanlykhoMVVM\Quanlykho\bin\Debug\log4net.xml
+F:\6. Other\QuanlykhoMVVM\Quanlykho\obj\Debug\View\HomeView.g.cs
+F:\6. Other\QuanlykhoMVVM\Quanlykho\obj\Debug\View\HomeView.baml

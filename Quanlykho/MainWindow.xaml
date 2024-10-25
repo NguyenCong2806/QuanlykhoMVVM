@@ -11,7 +11,6 @@
         AllowsTransparency="True"
         Background="Transparent"
         WindowStyle="None"
-        Style="{StaticResource MaterialDesignWindow}"
         Title="MainWindow" Height="630" Width="1300">
 
     <Window.DataContext>
@@ -124,7 +123,7 @@
                                         <materialDesign:PackIcon Grid.Column="0" Kind="Import"
                                           Height="26" Width="26"
                                           Margin="10 5"
-                                          Foreground="Green" /> 
+                                          Foreground="Green" />
                                         <TextBlock Style="{StaticResource text5}"
                                             Grid.Column="1" Text="Inputs" />
                                     </Grid>
@@ -138,7 +137,7 @@
                                         <materialDesign:PackIcon Grid.Column="0" Kind="UfoOutline"
                                               Height="26" Width="26"
                                               Margin="10 5"
-                                              Foreground="Green" /> 
+                                              Foreground="Green" />
                                         <TextBlock Style="{StaticResource text5}"
                                                 Grid.Column="1" Text="Object" />
                                     </Grid>
@@ -152,7 +151,7 @@
                                         <materialDesign:PackIcon Grid.Column="0" Kind="Export"
                                           Height="26" Width="26"
                                           Margin="10 5"
-                                          Foreground="Green" /> 
+                                          Foreground="Green" />
                                         <TextBlock Style="{StaticResource text5}"
                                             Grid.Column="1" Text="Outputinfoes" />
                                     </Grid>
@@ -166,7 +165,7 @@
                                         <materialDesign:PackIcon Grid.Column="0" Kind="BriefcaseUploadOutline"
                                           Height="26" Width="26"
                                           Margin="10 5"
-                                          Foreground="Green" /> 
+                                          Foreground="Green" />
                                         <TextBlock Style="{StaticResource text5}"
                                             Grid.Column="1" Text="Outputs" />
                                     </Grid>
@@ -180,7 +179,7 @@
                                         <materialDesign:PackIcon Grid.Column="0" Kind="AccountOutline"
                                               Height="26" Width="26"
                                               Margin="10 5"
-                                              Foreground="Green" />     
+                                              Foreground="Green" />
                                         <TextBlock Style="{StaticResource text5}"
                                              Grid.Column="1" Text="Users" />
                                     </Grid>
@@ -194,7 +193,7 @@
                                         <materialDesign:PackIcon Grid.Column="0" Kind="FolderAccountOutline"
                                           Height="26" Width="26"
                                           Margin="10 5"
-                                          Foreground="Green" />     
+                                          Foreground="Green" />
                                         <TextBlock Style="{StaticResource text5}"
                                             Grid.Column="1" Text="Roles" />
                                     </Grid>
@@ -204,8 +203,31 @@
                     </Grid>
                 </Border>
             </StackPanel>
-            <Grid Grid.Column="1" Background="#9b9b9b">
-                <ContentControl x:Name="Pages" Content="{Binding CurrentView}" />
+            <Grid Grid.Column="1" Background="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <StackPanel Grid.Row="0">
+                    <Button 
+                   IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+                    Style="{StaticResource MaterialDesignFloatingActionMiniLightButton}"
+                    ToolTip="Thoát ứng dụng"
+                    Command="{Binding ShutdownCommand}"
+                    HorizontalAlignment="Right"
+                    Background="#8e0c26"
+                    Height="22"
+                     Width="22">
+                        <materialDesign:PackIcon Width="20"
+                                       Height="20"
+                                       Kind="Close"
+                                       Foreground="White"
+                        />
+                    </Button>
+                </StackPanel>
+                <Grid Height="auto" Grid.Row="1">
+                    <ContentControl x:Name="Pages" Content="{Binding CurrentView}" />
+                </Grid>
             </Grid>
         </Grid>
     </Border>

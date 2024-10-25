@@ -14,6 +14,7 @@
             </Setter.Value>
         </Setter>
     </Style>
+    
     <Style x:Key="bock1" TargetType="Grid">
     </Style>
     <Style x:Key="borde_avatar" TargetType="Border">

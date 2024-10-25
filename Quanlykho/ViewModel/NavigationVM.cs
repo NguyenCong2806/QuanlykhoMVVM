@@ -1,5 +1,6 @@
 ﻿using Quanlykho.Utilities;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Input;
 
 namespace Quanlykho.ViewModel
@@ -13,6 +14,7 @@ namespace Quanlykho.ViewModel
             get { return _currentView; }
             set { _currentView = value; OnPropertyChanged(nameof(CurrentView)); }
         }
+        public ICommand ShutdownCommand { get; set; }
         public ICommand HomeCommand { get; set; }
         public ICommand UnitCommand { get; set; }
         public ICommand CustomerCommand { get; set; }
@@ -83,13 +85,17 @@ namespace Quanlykho.ViewModel
             CurrentView = new SuplierVM();
             await Task.Yield();
         }
-
+        private async Task Shutdown(object obj)
+        {
+            Application.Current.Shutdown();
+            await Task.Yield();
+        }
         public NavigationVM()
         {
             HomeCommand = new AsyncRelayCommand<HomeVM>(Home,null,null);
             UnitCommand = new AsyncRelayCommand<UnitVM>(Unit, null, null);
             SuplierCommand = new AsyncRelayCommand<SuplierVM>(Suplier, null, null);
-
+            ShutdownCommand = new AsyncRelayCommand<object>(Shutdown, null, null);
             // Startup Page
             CurrentView = new HomeVM();
         }
