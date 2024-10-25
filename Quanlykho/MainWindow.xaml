@@ -205,7 +205,7 @@
             </StackPanel>
             <Grid Grid.Column="1" Background="White">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="40" />
+                    <RowDefinition Height="30" />
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
                 <StackPanel Grid.Row="0">
@@ -216,10 +216,10 @@
                     Command="{Binding ShutdownCommand}"
                     HorizontalAlignment="Right"
                     Background="#8e0c26"
-                    Height="28"
-                     Width="28">
-                        <materialDesign:PackIcon Width="26"
-                                       Height="26"
+                    Height="22"
+                     Width="22">
+                        <materialDesign:PackIcon Width="20"
+                                       Height="20"
                                        Kind="Close"
                                        Foreground="White"
                         />
