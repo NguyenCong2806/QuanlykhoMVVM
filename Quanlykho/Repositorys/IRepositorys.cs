@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
 
 namespace Quanlykho.Repositorys
@@ -7,12 +9,13 @@ namespace Quanlykho.Repositorys
     public interface IRepositorys<T> where T : class
     {
         Task<IQueryable<T>> GetAllAsync();
-        Task<T> GetValueAsync(int id);
+        Task<T> GetValueAsync(Expression<Func<T, bool>> predicate);
         Task AddAsync(T entity);
         void AddRange(IEnumerable<T> entities);
         Task<int> SaveAsync();
-        Task DeleteAsync(int id);
-        void DeleteAsync(T entity);
+        void Dispose();
+        Task DeleteAsync(Expression<Func<T, bool>> predicate);
+        Task DeleteAsync(T entity);
         T UpdateAsync(T entity);
     }
 }
