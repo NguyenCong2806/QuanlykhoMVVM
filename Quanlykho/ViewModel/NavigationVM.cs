@@ -13,7 +13,7 @@ namespace Quanlykho.ViewModel
             get { return _currentView; }
             set { _currentView = value; OnPropertyChanged(nameof(CurrentView)); }
         }
-
+        public ICommand HomeCommand { get; set; }
         public ICommand UnitCommand { get; set; }
         public ICommand CustomerCommand { get; set; }
         public ICommand InputInfoesCommand { get; set; }
@@ -25,36 +25,73 @@ namespace Quanlykho.ViewModel
         public ICommand UsersCommand { get; set; }
         public ICommand SuplierCommand { get; set; }
 
+        private async Task Home(object obj)
+        {
+            CurrentView = new HomeVM();
+            await Task.Yield();
+        }
         private async Task Unit(object obj)
         {
             CurrentView = new UnitVM();
             await Task.Yield();
         }
 
-        private void Customer(object obj) => CurrentView = new CustomerVM();
+        private async Task Customer(object obj)
+        {
+            CurrentView = new CustomerVM();
+            await Task.Yield();
+        }
 
-        private void InputInfoes(object obj) => CurrentView = new InputInfoesVM();
+        private async Task InputInfoes(object obj)
+        {
+            CurrentView = new InputInfoesVM();
+            await Task.Yield();
+        }
 
-        private void Objects(object obj) => CurrentView = new ObjectsVM();
+        private async Task Objects(object obj)
+        {
+            CurrentView = new ObjectsVM();
+            await Task.Yield();
+        }
 
-        private void OutputInfoes(object obj) => CurrentView = new OutputInfoesVM();
+        private async Task OutputInfoes(object obj)
+        {
+            CurrentView = new OutputInfoesVM();
+            await Task.Yield();
+        }
 
-        private void Outputs(object obj) => CurrentView = new OutputsVM();
+        private async Task Outputs(object obj)
+        {
+            CurrentView = new OutputsVM();
+            await Task.Yield();
+        }
 
-        private void UserRoles(object obj) => CurrentView = new UserRolesVM();
+        private async Task UserRoles(object obj)
+        {
+            CurrentView = new UserRolesVM();
+            await Task.Yield();
+        }
 
-        private void Users(object obj) => CurrentView = new UsersVM();
+        private async Task Users(object obj)
+        {
+            CurrentView = new UsersVM();
+            await Task.Yield();
+        }
 
-        private void Suplier(object obj) => CurrentView = new SuplierVM();
+        private async Task Suplier(object obj)
+        {
+            CurrentView = new SuplierVM();
+            await Task.Yield();
+        }
 
         public NavigationVM()
         {
-            //UnitCommand = new RelayCommand(Unit);
+            HomeCommand = new AsyncRelayCommand<HomeVM>(Home,null,null);
             UnitCommand = new AsyncRelayCommand<UnitVM>(Unit, null, null);
-            SuplierCommand = new RelayCommand(Suplier);
+            SuplierCommand = new AsyncRelayCommand<SuplierVM>(Suplier, null, null);
 
             // Startup Page
-            CurrentView = new UnitVM();
+            CurrentView = new HomeVM();
         }
     }
 }
