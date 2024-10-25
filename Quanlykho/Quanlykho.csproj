@@ -83,6 +83,8 @@
     </ApplicationDefinition>
     <Compile Include="Interfaces\IAsyncCommand.cs" />
     <Compile Include="Interfaces\IErrorHandler.cs" />
+    <Compile Include="Repositorys\IRepositorys.cs" />
+    <Compile Include="Repositorys\Repository.cs" />
     <Compile Include="Utilities\AsyncCommand.cs" />
     <Compile Include="Utilities\AsyncRelayCommand.cs" />
     <Compile Include="Utilities\Btn.cs" />
@@ -291,7 +293,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\" />
-    <Folder Include="Repository\" />
+    <Folder Include="Service\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Entity\QuanlykhoModel.Context.tt">
