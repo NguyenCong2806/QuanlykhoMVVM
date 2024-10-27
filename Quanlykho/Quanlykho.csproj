@@ -83,11 +83,20 @@
     </ApplicationDefinition>
     <Compile Include="Interfaces\IAsyncCommand.cs" />
     <Compile Include="Interfaces\IErrorHandler.cs" />
+    <Compile Include="Model\UnitModel.cs" />
+    <Compile Include="QuanLyKhoKteamDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyKhoKteamDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Repositorys\IRepositorys.cs" />
+    <Compile Include="Repositorys\IUnitRepository.cs" />
     <Compile Include="Repositorys\Repository.cs" />
+    <Compile Include="Repositorys\UnitRepository.cs" />
     <Compile Include="Utilities\AsyncCommand.cs" />
     <Compile Include="Utilities\AsyncRelayCommand.cs" />
     <Compile Include="Utilities\Btn.cs" />
+    <Compile Include="Utilities\ConvertIQueryvableToObservable.cs" />
     <Compile Include="Utilities\RelayCommand.cs" />
     <Compile Include="Utilities\TaskUtilities.cs" />
     <Compile Include="Utilities\ViewModelBase.cs" />
@@ -287,12 +296,22 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <None Include="QuanLyKhoKteamDataSet.xsc">
+      <DependentUpon>QuanLyKhoKteamDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyKhoKteamDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyKhoKteamDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyKhoKteamDataSet.xss">
+      <DependentUpon>QuanLyKhoKteamDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Model\" />
     <Folder Include="Service\" />
   </ItemGroup>
   <ItemGroup>

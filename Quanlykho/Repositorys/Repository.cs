@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Quanlykho.Entity;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -8,12 +9,12 @@ using System.Threading.Tasks;
 
 namespace Quanlykho.Repositorys
 {
-    public abstract class Repository<T, TContext> : IRepositorys<T> where T : class where TContext : DbContext
+    public abstract class Repository<T> : IRepositorys<T> where T : class
     {
-        protected readonly TContext _context;
+        protected readonly DbContext _context;
         private DbSet<T> _table;
 
-        protected Repository(TContext context)
+        protected Repository(DbContext context)
         {
             _context = context;
             _table = _context.Set<T>();
@@ -29,10 +30,6 @@ namespace Quanlykho.Repositorys
             catch (Exception ex)
             {
                 throw new System.NotImplementedException(ex.Message);
-            }
-            finally
-            {
-                Dispose();
             }
         }
 
@@ -51,10 +48,6 @@ namespace Quanlykho.Repositorys
             {
                 throw new System.NotImplementedException(ex.Message);
             }
-            finally
-            {
-                Dispose();
-            }
         }
 
         public async Task DeleteAsync(Expression<Func<T, bool>> predicate)
@@ -68,10 +61,6 @@ namespace Quanlykho.Repositorys
             catch (Exception ex)
             {
                 throw new System.NotImplementedException(ex.Message);
-            }
-            finally
-            {
-                Dispose();
             }
         }
 
@@ -91,10 +80,6 @@ namespace Quanlykho.Repositorys
             {
                 throw new System.NotImplementedException(ex.Message);
             }
-            finally
-            {
-                Dispose();
-            }
         }
 
         public async Task<T> GetValueAsync(Expression<Func<T, bool>> predicate)
@@ -107,10 +92,6 @@ namespace Quanlykho.Repositorys
             {
                 throw new System.NotImplementedException(ex.Message);
             }
-            finally
-            {
-                Dispose();
-            }
         }
 
         public async Task<int> SaveAsync()
@@ -120,9 +101,35 @@ namespace Quanlykho.Repositorys
             return (int)HttpStatusCode.OK;
         }
 
-        public T UpdateAsync(T entity)
+        public async Task UpdateAsync(T entity)
         {
-            throw new System.NotImplementedException();
+            try
+            {
+                _context.Entry(entity).State = EntityState.Modified;
+
+                await SaveAsync();
+            }
+            catch (Exception ex)
+            {
+                throw new System.NotImplementedException(ex.Message);
+            }
         }
+
+        //public async Task UpdateAsync(T entity, Expression<Func<T, object>>[] properties)
+        //{
+        //    try
+        //    {
+        //        var dbEntry = _context.Entry(entity);
+        //        foreach (var includeProperty in properties)
+        //        {
+        //            dbEntry.Property(includeProperty).IsModified = true;
+        //        }
+        //       await SaveAsync();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw new System.NotImplementedException(ex.Message);
+        //    }
+        //}
     }
 }

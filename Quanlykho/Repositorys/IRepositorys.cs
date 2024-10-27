@@ -16,6 +16,7 @@ namespace Quanlykho.Repositorys
         void Dispose();
         Task DeleteAsync(Expression<Func<T, bool>> predicate);
         Task DeleteAsync(T entity);
-        T UpdateAsync(T entity);
+        //Task UpdateAsync(T entity, Expression<Func<T, object>>[] properties);
+        Task UpdateAsync(T entity);
     }
 }
