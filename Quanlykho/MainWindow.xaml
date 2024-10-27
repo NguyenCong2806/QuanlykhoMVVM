@@ -11,7 +11,7 @@
         AllowsTransparency="True"
         Background="Transparent"
         WindowStyle="None"
-        Title="MainWindow" Height="630" Width="1300">
+        Title="MainWindow" Height="630" Width="1200">
 
     <Window.DataContext>
         <vm:NavigationVM />
