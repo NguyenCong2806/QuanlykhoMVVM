@@ -7,30 +7,26 @@ namespace Quanlykho.Model
 {
     public class UnitModel : ViewModelBase
     {
-        //private int _id;
-        //public int Id
-        //{
-        //    get
-        //    {
-        //        return _id;
-        //    }
-        //    set
-        //    {
-        //        _id = value;
-        //        OnPropertyChanged(nameof(Id));
-        //    }
-        //}
-        //private string _displayName;
-
-        //public string DisplayName
-        //{
-        //    get { return _displayName; }
-        //    set
-        //    {
-        //        _displayName = value;
-        //        OnPropertyChanged(nameof(DisplayName));
-        //    }
-        //}
+        private int _pageIndex {  get; set; }
+        public int PageIndex
+        {
+            get { return _pageIndex; }
+            set
+            {
+                _pageIndex = value;
+                OnPropertyChanged(nameof(PageIndex));
+            }
+        }
+        private int _pageSize { get; set; }
+        public int PageSize
+        {
+            get { return _pageSize; }
+            set
+            {
+                _pageSize = value;
+                OnPropertyChanged(nameof(PageSize));
+            }
+        }
         private Unit _units;
         public Unit Units 
         { 
@@ -39,6 +35,26 @@ namespace Quanlykho.Model
             { 
                 _units = value;
                 OnPropertyChanged(nameof(Units));
+            }
+        }
+        private bool _isEnableNext;
+        public bool IsEnableNext
+        {
+            get { return _isEnableNext; }
+            set
+            {
+                _isEnableNext = value;
+                OnPropertyChanged(nameof(IsEnableNext));
+            }
+        }
+        private bool _isEnablePrevious;
+        public bool IsEnablePrevious
+        {
+            get { return _isEnablePrevious; }
+            set
+            {
+                _isEnablePrevious = value;
+                OnPropertyChanged(nameof(IsEnablePrevious));
             }
         }
         private ObservableCollection<Unit> _unitModels;

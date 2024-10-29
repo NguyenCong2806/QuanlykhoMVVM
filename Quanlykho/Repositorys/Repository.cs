@@ -1,4 +1,5 @@
-﻿using Quanlykho.Entity;
+﻿using Quanlykho.Model;
+using Quanlykho.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -69,12 +70,25 @@ namespace Quanlykho.Repositorys
             _context.Dispose();
         }
 
-        public async Task<IQueryable<T>> GetAllAsync()
+        public async Task<ResultData<T>> GetAllAsync<Tkey>(PagedList<T, Tkey> pagedList)
         {
+            ResultData<T> resultData = new ResultData<T>();
             try
             {
-                var data = await _table.ToListAsync();
-                return data.AsQueryable<T>();
+                resultData.TotalCount = await _table.CountAsync();
+
+                double pageCount = (double)(resultData.TotalCount / Convert.ToDecimal(pagedList.RecordsPerPage));
+                resultData.PageCount = (int)Math.Ceiling(pageCount);
+
+                
+                resultData.TotalPage = await _table.CountAsync();
+                var data = await _table.OrderByDescending(pagedList.KeySelector)
+                                .Skip((pagedList.PageNumber - 1) * pagedList.RecordsPerPage)
+                                .Take(pagedList.RecordsPerPage).ToListAsync();
+
+                resultData.ListData = data.AsQueryable<T>();
+
+                return resultData;
             }
             catch (Exception ex)
             {
@@ -114,22 +128,5 @@ namespace Quanlykho.Repositorys
                 throw new System.NotImplementedException(ex.Message);
             }
         }
-
-        //public async Task UpdateAsync(T entity, Expression<Func<T, object>>[] properties)
-        //{
-        //    try
-        //    {
-        //        var dbEntry = _context.Entry(entity);
-        //        foreach (var includeProperty in properties)
-        //        {
-        //            dbEntry.Property(includeProperty).IsModified = true;
-        //        }
-        //       await SaveAsync();
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw new System.NotImplementedException(ex.Message);
-        //    }
-        //}
     }
 }
