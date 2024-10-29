@@ -47,11 +47,10 @@
                 Kind="Plus" />
             </Button>
         </StackPanel>
-        <StackPanel Grid.Row="1">
+        <StackPanel Grid.Row="1" Orientation="Vertical">
             <ListView
                     ItemsSource="{Binding Unitview.UnitModels}"
                     VerticalContentAlignment="Top"
-                   MaxHeight="400"
                   ScrollViewer.VerticalScrollBarVisibility="Visible"
                 SelectedItem="{Binding Unitview.Units}"
                   ScrollViewer.CanContentScroll="False">
@@ -82,6 +81,29 @@
                     </GridView>
                 </ListView.View>
             </ListView>
+            <StackPanel Margin="0 10 0 0" Orientation="Horizontal"  HorizontalAlignment="Right" VerticalAlignment="Center">
+                <Button
+                  IsEnabled="{Binding Unitview.IsEnablePrevious}"
+                    Command="{Binding PreviousPageCommand}"
+                  Style="{StaticResource MaterialDesignFloatingActionMiniSecondaryDarkButton}"
+                  ToolTip="Lùi lại">
+                    <materialDesign:PackIcon
+                    Width="20"
+                    Height="20"
+                    Kind="ArrowLeft" />
+                </Button>
+                <Button
+                   Margin="20 0 0 0"
+                   Command="{Binding NextPageCommand}"
+                   IsEnabled="{Binding Unitview.IsEnableNext}"
+                   Style="{StaticResource MaterialDesignFloatingActionMiniSecondaryDarkButton}"
+                   ToolTip="Tiến lên">
+                    <materialDesign:PackIcon
+                     Width="20"
+                     Height="20"
+                     Kind="ArrowRight" />    
+                </Button>
+            </StackPanel>
         </StackPanel>
     </Grid>
 </UserControl>

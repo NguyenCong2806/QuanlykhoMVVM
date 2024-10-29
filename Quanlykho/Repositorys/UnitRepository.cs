@@ -1,4 +1,6 @@
 ﻿using Quanlykho.Entity;
+using Quanlykho.Model;
+using Quanlykho.Utilities;
 using System;
 using System.Data.Entity;
 using System.Linq;
@@ -23,9 +25,9 @@ namespace Quanlykho.Repositorys
             await base.DeleteAsync(predicate);
         }
 
-        public async Task<IQueryable<Unit>> GetAllUnit()
+        public async Task<ResultData<Unit>> GetAllUnit(PagedList<Unit,int> pagedList)
         {
-           return await base.GetAllAsync();
+           return await base.GetAllAsync(pagedList);
         }
 
         public async Task<Unit> GetById(Expression<Func<Unit, bool>> predicate)
