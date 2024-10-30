@@ -75,18 +75,26 @@ namespace Quanlykho.Repositorys
             ResultData<T> resultData = new ResultData<T>();
             try
             {
-                resultData.TotalCount = await _table.CountAsync();
+                resultData.ListData = _table;
+                if (pagedList.KeyFind.Count() > 0)
+                {
+                    foreach (var item in pagedList.KeyFind)
+                    {
+                        resultData.ListData = _table.Where(item);
+                    }
+                }
+                resultData.TotalCount = await resultData.ListData.CountAsync();
 
                 double pageCount = (double)(resultData.TotalCount / Convert.ToDecimal(pagedList.RecordsPerPage));
                 resultData.PageCount = (int)Math.Ceiling(pageCount);
 
                 
                 resultData.TotalPage = await _table.CountAsync();
-                var data = await _table.OrderByDescending(pagedList.KeySelector)
+                var res = await resultData.ListData.OrderByDescending(pagedList.KeySelector)
                                 .Skip((pagedList.PageNumber - 1) * pagedList.RecordsPerPage)
                                 .Take(pagedList.RecordsPerPage).ToListAsync();
 
-                resultData.ListData = data.AsQueryable<T>();
+                resultData.ListData = res.AsQueryable<T>();
 
                 return resultData;
             }

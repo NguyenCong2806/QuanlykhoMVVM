@@ -10,13 +10,14 @@
         WindowStartupLocation="CenterScreen"
         AllowsTransparency="True"
         Background="Transparent"
+        Icon="./Resources/Icon/quanlykho.ico"
         WindowStyle="None"
         Title="MainWindow" Height="630" Width="1200">
 
     <Window.DataContext>
         <vm:NavigationVM />
     </Window.DataContext>
-    <Border CornerRadius="10" Padding="20" Background="White">
+    <Border CornerRadius="10" Padding="20" Background="White" BorderThickness="1" BorderBrush="#a3a3a3">
         <Grid Background="White">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="250" />

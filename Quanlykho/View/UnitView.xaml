@@ -22,11 +22,12 @@
               materialDesign:HintAssist.Hint="Nhập tên đơn vị"
               Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
             <Button
-                  Width="100"
+                  Command="{Binding FindDataCommand}"
+                  Width="90"
                   Margin="10 0"
                   Foreground="White"
                   FontWeight="Bold"
-                    Background="#09434f"
+                  Background="#09434f"
                   IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
                   Style="{StaticResource MaterialDesignRaisedSecondaryDarkButton}"
                   ToolTip="Tìm kiếm">
@@ -49,59 +50,79 @@
         </StackPanel>
         <StackPanel Grid.Row="1" Orientation="Vertical">
             <ListView
-                    ItemsSource="{Binding Unitview.UnitModels}"
-                    VerticalContentAlignment="Top"
-                  ScrollViewer.VerticalScrollBarVisibility="Visible"
+                ItemsSource="{Binding Unitview.UnitModels}"
+                Name="list_unit"
+                VerticalContentAlignment="Top"
+                Height="420"
+                ScrollViewer.VerticalScrollBarVisibility="Visible"
                 SelectedItem="{Binding Unitview.Units}"
                   ScrollViewer.CanContentScroll="False">
                 <ListView.View>
                     <GridView>
                         <GridViewColumn
+                            Width="150"
                             DisplayMemberBinding="{Binding Id}"
                             Header="Id" />
                         <GridViewColumn
+                            Width="550"
                             DisplayMemberBinding="{Binding DisplayName}"
                             Header="Tên" />
-                        <!--<GridViewColumn
-                            Header="Options">
+                        <GridViewColumn
+                            Width="150"
+                            Header="Chức năng">
                             <GridViewColumn.CellTemplate>
                                 <DataTemplate>
-                                    <ComboBox
-                                         Width="100">
-                                        <ComboBoxItem
-                                            Content="Test" />
-                                        <ComboBoxItem
-                                            Content="Test2" />
-                                        <ComboBoxItem
-                                            Content="Test3" />
-                                    </ComboBox>
+                                    <Button
+                                          Width="30"
+                                        Command="{Binding Path=DataContext.RemoveDataCommand,RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ItemsControl}}}"
+                                        CommandParameter="{Binding}"
+                                          Height="30"
+                                          Background="#820d05"
+                                          Style="{StaticResource MaterialDesignFloatingActionMiniSecondaryButton}"
+                                          ToolTip="Xóa bỏ">
+                                        <materialDesign:PackIcon
+                                            Foreground="#dddddd"
+                                            Width="25"
+                                            Height="25"
+                                            Kind="Delete" />
+                                    </Button>
                                 </DataTemplate>
                             </GridViewColumn.CellTemplate>
-                        </GridViewColumn>-->
+                        </GridViewColumn>
                     </GridView>
                 </ListView.View>
             </ListView>
-            <StackPanel Margin="0 10 0 0" Orientation="Horizontal"  HorizontalAlignment="Right" VerticalAlignment="Center">
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <WrapPanel Margin="20 0 0 0">
+                    <TextBlock  FontWeight="Bold" FontSize="14" Text="Page: " />
+                    <TextBlock FontWeight="Bold" FontSize="14"  Text="{Binding Unitview.PageIndex}" />
+                    <TextBlock  FontWeight="Thin" FontSize="14" Text=" | " />
+                    <TextBlock  FontWeight="Bold" FontSize="14" Text=" TotalPage: " />
+                    <TextBlock FontWeight="Bold" FontSize="14"  Text="{Binding Unitview.PageSize}" />
+                </WrapPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"  HorizontalAlignment="Right" VerticalAlignment="Center">
                 <Button
-                  IsEnabled="{Binding Unitview.IsEnablePrevious}"
-                    Command="{Binding PreviousPageCommand}"
-                  Style="{StaticResource MaterialDesignFloatingActionMiniSecondaryDarkButton}"
-                  ToolTip="Lùi lại">
+                       IsEnabled="{Binding Unitview.IsEnablePrevious}"
+                         Command="{Binding PreviousPageCommand}"
+                       Style="{StaticResource MaterialDesignFloatingActionMiniSecondaryDarkButton}"
+                       ToolTip="Lùi lại">
                     <materialDesign:PackIcon
-                    Width="20"
-                    Height="20"
-                    Kind="ArrowLeft" />
+                         Width="20"
+                         Height="20"
+                         Kind="ArrowLeft" />
                 </Button>
                 <Button
-                   Margin="20 0 0 0"
-                   Command="{Binding NextPageCommand}"
-                   IsEnabled="{Binding Unitview.IsEnableNext}"
-                   Style="{StaticResource MaterialDesignFloatingActionMiniSecondaryDarkButton}"
-                   ToolTip="Tiến lên">
+                        Margin="20 0 0 0"
+                        Command="{Binding NextPageCommand}"
+                        IsEnabled="{Binding Unitview.IsEnableNext}"
+                        Style="{StaticResource MaterialDesignFloatingActionMiniSecondaryDarkButton}"
+                        ToolTip="Tiến lên">
                     <materialDesign:PackIcon
-                     Width="20"
-                     Height="20"
-                     Kind="ArrowRight" />    
+                          Width="20"
+                          Height="20"
+                          Kind="ArrowRight" />
                 </Button>
             </StackPanel>
         </StackPanel>
