@@ -15,11 +15,14 @@ namespace Quanlykho.Entity
     
     public partial class QuanLyKhoKteamEntities : DbContext
     {
+        //public QuanLyKhoKteamEntities()
+        //    : base("name=QuanLyKhoKteamEntities")
+        //{
+        //}
         public QuanLyKhoKteamEntities()
-            : base("name=QuanLyKhoKteamEntities")
+               : base("QuanLyKhoKteamEntities")
         {
         }
-    
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();

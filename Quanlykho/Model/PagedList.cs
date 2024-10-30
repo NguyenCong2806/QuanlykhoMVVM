@@ -1,11 +1,12 @@
 ﻿using Quanlykho.Utilities;
 using System;
+using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Windows.Input;
 
 namespace Quanlykho.Model
 {
-    public class PagedList<T,Tkey> : ViewModelBase
+    public class PagedList<T, Tkey> : ViewModelBase
     {
         /// <summary>
         /// Số trang
@@ -50,6 +51,11 @@ namespace Quanlykho.Model
                 OnPropertyChanged(nameof(KeyWord));
             }
         }
-        public Expression<Func<T, Tkey>> KeySelector;
+        /// <summary>
+        /// Expression compare
+        /// </summary>
+        public Expression<Func<T, Tkey>> KeySelector { get; set; }
+
+        public List<Expression<Func<T, bool>>> KeyFind { get; set; }
     }
 }
