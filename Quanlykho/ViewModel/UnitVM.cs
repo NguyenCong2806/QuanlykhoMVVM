@@ -2,20 +2,45 @@
 using Quanlykho.Model;
 using Quanlykho.Repositorys;
 using Quanlykho.Utilities;
-using System.Collections.Generic;
 using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Documents;
 using System.Windows.Input;
-using static MaterialDesignThemes.Wpf.Theme.ToolBar;
-using System.Windows;
+using ToastNotifications;
+using ToastNotifications.Lifetime;
+using ToastNotifications.Messages;
+using ToastNotifications.Position;
 
 namespace Quanlykho.ViewModel
 {
     public class UnitVM
     {
+
+        /// <summary>
+        /// Notifier 
+        /// </summary>
+        private Notifier notifier = new Notifier(cfg =>
+        {
+            cfg.PositionProvider = new WindowPositionProvider(
+                parentWindow: Application.Current.MainWindow,
+                corner: Corner.TopRight,
+                offsetX: 10,
+                offsetY: 10);
+
+            cfg.LifetimeSupervisor = new TimeAndCountBasedLifetimeSupervisor(
+                notificationLifetime: TimeSpan.FromSeconds(3),
+                maximumNotificationCount: MaximumNotificationCount.FromCount(5));
+
+            cfg.Dispatcher = Application.Current.Dispatcher;
+        });
+
+
+
+
         private ICommand _saveCommand;
 
         public ICommand SaveCommand
@@ -54,7 +79,9 @@ namespace Quanlykho.ViewModel
                 return _nextPageCommand;
             }
         }
+
         private ICommand _findDataCommand;
+
         public ICommand FindDataCommand
         {
             get
@@ -65,6 +92,7 @@ namespace Quanlykho.ViewModel
                 return _findDataCommand;
             }
         }
+
         private ICommand _removeDataCommand;
 
         public ICommand RemoveDataCommand
@@ -77,6 +105,7 @@ namespace Quanlykho.ViewModel
                 return _removeDataCommand;
             }
         }
+
         public UnitModel Unitview { get; set; }
         private UnitRepository _unitrepository;
         private QuanLyKhoKteamEntities _quanLyKhoKteamEntities;
@@ -100,15 +129,8 @@ namespace Quanlykho.ViewModel
 
         private async void GetAll()
         {
-            var data = await _unitrepository.GetAllUnit(PagedList);
-
-            Unitview.PageSize = data.PageCount;
-            Unitview.PageIndex = PagedList.PageNumber;
-            Pagination(PagedList.PageNumber);
-            foreach (var item in data.ListData)
-            {
-                Unitview.UnitModels.Add(item);
-            }
+            PagedList.PageNumber = 1;
+            await GetAllAsync(string.Empty, PagedList.PageNumber);
         }
 
         private async Task SaveData()
@@ -116,13 +138,14 @@ namespace Quanlykho.ViewModel
             if (Unitview.Units.Id <= 0)
             {
                 await _unitrepository.AddUnit(Unitview.Units);
+                notifier.ShowSuccess("Them moi thanh cong");
             }
             else
             {
                 await _unitrepository.UpdateUnit(Unitview.Units);
             }
 
-            GetAll();
+            await GetAllAsync(string.Empty, PagedList.PageNumber);
             Unitview.Units = new Unit();
         }
 
@@ -130,58 +153,77 @@ namespace Quanlykho.ViewModel
         {
             await GetAllAsync(string.Empty, PagedList.PageNumber + 1);
         }
+
         private async Task PreviousPageAsync()
         {
             await GetAllAsync(string.Empty, PagedList.PageNumber - 1);
         }
+
         private async Task GetAllAsync(string keyWord, int pageNumber)
         {
+            Unitview.UnitModels = new ObservableCollection<Unit>();
             PagedList.PageNumber = Unitview.PageIndex = pageNumber;
+            //Find keyword//
             PagedList.KeyWord = keyWord;
             if (!string.IsNullOrEmpty(keyWord))
             {
                 PagedList.KeyFind = new List<Expression<Func<Unit, bool>>>();
                 PagedList.KeyFind.Add(x => x.DisplayName.Contains(keyWord));
             }
-           
-            Unitview.UnitModels = new ObservableCollection<Unit>();
+            ///Get data//
             var data = await _unitrepository.GetAllUnit(PagedList);
-
+            //Pagding//
+            Unitview.PageSize = data.PageCount;
+           
             Pagination(pageNumber);
+
             foreach (var item in data.ListData)
             {
                 Unitview.UnitModels.Add(item);
             }
         }
+
         private async Task FindDataAsync()
         {
             if (!string.IsNullOrEmpty(Unitview.Units.DisplayName))
             {
                 await GetAllAsync(Unitview.Units.DisplayName, PagedList.PageNumber);
             }
-            else {
+            else
+            {
                 PagedList.KeyFind = new List<Expression<Func<Unit, bool>>>();
                 await GetAllAsync(string.Empty, PagedList.PageNumber);
             }
         }
+
         private void Pagination(int pageNumber)
         {
             if (pageNumber == 1)
             {
                 Unitview.IsEnablePrevious = false;
                 Unitview.IsEnableNext = true;
+                return;
             }
-            if (pageNumber == Unitview.PageSize)
+            if (Unitview.PageSize == pageNumber && pageNumber==1)
+            {
+                Unitview.IsEnablePrevious = false;
+                Unitview.IsEnableNext = false;
+                return;
+            }
+            if (pageNumber == Unitview.PageSize && pageNumber > 1)
             {
                 Unitview.IsEnableNext = false;
                 Unitview.IsEnablePrevious = true;
+                return;
             }
-            if(pageNumber >1 && pageNumber < Unitview.PageSize)
+            if (pageNumber > 1 && pageNumber < Unitview.PageSize)
             {
                 Unitview.IsEnableNext = true;
                 Unitview.IsEnablePrevious = true;
+                return;
             }
         }
+
         /// <summary>
         /// Remove data unit
         /// </summary>
@@ -189,7 +231,7 @@ namespace Quanlykho.ViewModel
         private async Task RemoveAsync(object o)
         {
             var item = o as Unit;
-            await _unitrepository.DeleteUnit(U=>U.Id== item.Id);
+            await _unitrepository.DeleteUnit(U => U.Id == item.Id);
             await GetAllAsync(string.Empty, PagedList.PageNumber);
         }
     }

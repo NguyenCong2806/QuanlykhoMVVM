@@ -59,3 +59,5 @@ F:\4. wpf\QuanlykhoMVVM\Quanlykho\obj\Debug\Quanlykho.csproj.CoreCompileInputs.c
 F:\4. wpf\QuanlykhoMVVM\Quanlykho\obj\Debug\Quanlykho.csproj.Up2Date
 F:\4. wpf\QuanlykhoMVVM\Quanlykho\obj\Debug\Quanlykho.exe
 F:\4. wpf\QuanlykhoMVVM\Quanlykho\obj\Debug\Quanlykho.pdb
+F:\4. wpf\QuanlykhoMVVM\Quanlykho\bin\Debug\ToastNotifications.dll
+F:\4. wpf\QuanlykhoMVVM\Quanlykho\bin\Debug\ToastNotifications.Messages.dll
