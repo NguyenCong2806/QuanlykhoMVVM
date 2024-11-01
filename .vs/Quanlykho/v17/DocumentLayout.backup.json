@@ -3,11 +3,27 @@
   "WorkspaceRootPath": "F:\\4. wpf\\QuanlykhoMVVM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|F:\\4. wpf\\QuanlykhoMVVM\\quanlykho\\viewmodel\\unitvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|f:\\4. wpf\\quanlykhomvvm\\quanlykho\\viewmodel\\unitvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|solutionrelative:quanlykho\\viewmodel\\unitvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|f:\\4. wpf\\quanlykhomvvm\\quanlykho\\view\\unitview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|f:\\4. wpf\\quanlykhomvvm\\quanlykho\\model\\unitmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|solutionrelative:quanlykho\\model\\unitmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|F:\\4. wpf\\QuanlykhoMVVM\\quanlykho\\repositorys\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|solutionrelative:quanlykho\\repositorys\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|f:\\4. wpf\\quanlykhomvvm\\quanlykho\\utilities\\resultdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|solutionrelative:quanlykho\\utilities\\resultdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|F:\\4. wpf\\QuanlykhoMVVM\\quanlykho\\repositorys\\irepositorys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|solutionrelative:quanlykho\\repositorys\\irepositorys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|F:\\4. wpf\\QuanlykhoMVVM\\quanlykho\\view\\unitview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|solutionrelative:quanlykho\\view\\unitview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
@@ -17,14 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|F:\\4. wpf\\QuanlykhoMVVM\\quanlykho\\model\\pagedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|solutionrelative:quanlykho\\model\\pagedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|F:\\4. wpf\\QuanlykhoMVVM\\quanlykho\\repositorys\\irepositorys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|solutionrelative:quanlykho\\repositorys\\irepositorys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|F:\\4. wpf\\QuanlykhoMVVM\\quanlykho\\repositorys\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|solutionrelative:quanlykho\\repositorys\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|F:\\4. wpf\\QuanlykhoMVVM\\quanlykho\\repositorys\\unitrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -52,7 +60,7 @@
               "RelativeDocumentMoniker": "Quanlykho\\ViewModel\\UnitVM.cs",
               "ToolTip": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\ViewModel\\UnitVM.cs",
               "RelativeToolTip": "Quanlykho\\ViewModel\\UnitVM.cs",
-              "ViewState": "AgIAAJEAAAAAAAAAAAAawL0AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAmwIwAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-27T12:19:10.461Z",
               "IsPinned": true,
@@ -60,18 +68,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "UnitModel.cs",
+              "DocumentMoniker": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\Model\\UnitModel.cs",
+              "RelativeDocumentMoniker": "Quanlykho\\Model\\UnitModel.cs",
+              "ToolTip": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\Model\\UnitModel.cs",
+              "RelativeToolTip": "Quanlykho\\Model\\UnitModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T00:35:30.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ResultData.cs",
+              "DocumentMoniker": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\Utilities\\ResultData.cs",
+              "RelativeDocumentMoniker": "Quanlykho\\Utilities\\ResultData.cs",
+              "ToolTip": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\Utilities\\ResultData.cs",
+              "RelativeToolTip": "Quanlykho\\Utilities\\ResultData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T23:19:14.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Quanlykho\\MainWindow.xaml",
               "ToolTip": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\MainWindow.xaml",
               "RelativeToolTip": "Quanlykho\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-29T16:26:09.176Z"
+              "WhenOpened": "2024-10-29T16:26:09.176Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "UnitView.xaml",
               "DocumentMoniker": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\View\\UnitView.xaml",
               "RelativeDocumentMoniker": "Quanlykho\\View\\UnitView.xaml",
@@ -83,7 +118,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "PagedList.cs",
               "DocumentMoniker": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\Model\\PagedList.cs",
               "RelativeDocumentMoniker": "Quanlykho\\Model\\PagedList.cs",
@@ -91,7 +126,8 @@
               "RelativeToolTip": "Quanlykho\\Model\\PagedList.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T13:09:43.006Z"
+              "WhenOpened": "2024-10-29T13:09:43.006Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -103,23 +139,25 @@
               "RelativeToolTip": "Quanlykho\\Repositorys\\IRepositorys.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T23:07:38.522Z"
+              "WhenOpened": "2024-10-27T23:07:38.522Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "Repository.cs",
               "DocumentMoniker": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\Repositorys\\Repository.cs",
               "RelativeDocumentMoniker": "Quanlykho\\Repositorys\\Repository.cs",
               "ToolTip": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\Repositorys\\Repository.cs",
               "RelativeToolTip": "Quanlykho\\Repositorys\\Repository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAE4AAAAAAAAAAADwv1sAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T13:42:32.845Z"
+              "WhenOpened": "2024-10-27T13:42:32.845Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "UnitRepository.cs",
               "DocumentMoniker": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\Repositorys\\UnitRepository.cs",
               "RelativeDocumentMoniker": "Quanlykho\\Repositorys\\UnitRepository.cs",
@@ -127,11 +165,12 @@
               "RelativeToolTip": "Quanlykho\\Repositorys\\UnitRepository.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAhwB0AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T12:19:01.451Z"
+              "WhenOpened": "2024-10-27T12:19:01.451Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "IUnitRepository.cs",
               "DocumentMoniker": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\Repositorys\\IUnitRepository.cs",
               "RelativeDocumentMoniker": "Quanlykho\\Repositorys\\IUnitRepository.cs",
@@ -139,7 +178,8 @@
               "RelativeToolTip": "Quanlykho\\Repositorys\\IUnitRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T23:09:22.945Z"
+              "WhenOpened": "2024-10-27T23:09:22.945Z",
+              "EditorCaption": ""
             }
           ]
         }
