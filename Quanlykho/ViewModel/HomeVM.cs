@@ -34,16 +34,7 @@ namespace Quanlykho.ViewModel
         }
         private async Task Show()
         {
-            var alert = new SweetAlert();
-            alert.Caption = "Custom Alert";
-            alert.Message = "Content";
-            alert.MsgButton = SweetAlertButton.YesNo;
-            alert.OkText = "Có";
-            alert.CancelText = "Không";
-
-            SweetAlertResult result = alert.ShowDialog();
-
-            Console.WriteLine(result);
+           
             await Task.Yield();
         }
     }

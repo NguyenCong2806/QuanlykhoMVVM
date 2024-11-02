@@ -12,6 +12,7 @@ namespace Quanlykho.Repositorys
     {
         Task<ResultData<Unit>> GetAllUnit(PagedList<Unit,int> pagedList);
         Task<Unit> GetById(Expression<Func<Unit, bool>> predicate);
+        Task<IQueryable<Unit>> GetAllUnit();
         Task AddUnit(Unit entity);
         Task DeleteUnit(Expression<Func<Unit, bool>> predicate);
         Task UpdateUnit(Unit entity);

@@ -30,6 +30,11 @@ namespace Quanlykho.Repositorys
            return await base.GetAllAsync(pagedList);
         }
 
+        public async Task<IQueryable<Unit>> GetAllUnit()
+        {
+            return await base.GetAll();
+        }
+
         public async Task<Unit> GetById(Expression<Func<Unit, bool>> predicate)
         {
             return await base.GetValueAsync(predicate);

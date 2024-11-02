@@ -2,6 +2,7 @@
 using Quanlykho.Utilities;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
@@ -10,6 +11,7 @@ namespace Quanlykho.Repositorys
     public interface IRepositorys<T> where T : class
     {
         Task<ResultData<T>> GetAllAsync<Tkey>(PagedList<T,Tkey> pagedList);
+        Task<IQueryable<T>> GetAll();
         Task<T> GetValueAsync(Expression<Func<T, bool>> predicate);
         Task AddAsync(T entity);
         void AddRange(IEnumerable<T> entities);

@@ -70,6 +70,19 @@ namespace Quanlykho.Repositorys
             _context.Dispose();
         }
 
+        public async Task<IQueryable<T>> GetAll()
+        {
+            try
+            {
+                var res = await _table.ToListAsync<T>();
+                return res.AsQueryable<T>();
+            }
+            catch (Exception ex)
+            {
+                throw new System.NotImplementedException(ex.Message);
+            }
+        }
+
         public async Task<ResultData<T>> GetAllAsync<Tkey>(PagedList<T, Tkey> pagedList)
         {
             ResultData<T> resultData = new ResultData<T>();

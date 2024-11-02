@@ -1,46 +1,21 @@
-﻿using Quanlykho.Entity;
+﻿using Quanlykho.Common;
+using Quanlykho.Entity;
 using Quanlykho.Model;
 using Quanlykho.Repositorys;
 using Quanlykho.Utilities;
+using SweetAlertSharp.Enums;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Documents;
 using System.Windows.Input;
-using ToastNotifications;
-using ToastNotifications.Lifetime;
-using ToastNotifications.Messages;
-using ToastNotifications.Position;
 
 namespace Quanlykho.ViewModel
 {
     public class UnitVM
     {
-
-        /// <summary>
-        /// Notifier 
-        /// </summary>
-        private Notifier notifier = new Notifier(cfg =>
-        {
-            cfg.PositionProvider = new WindowPositionProvider(
-                parentWindow: Application.Current.MainWindow,
-                corner: Corner.TopRight,
-                offsetX: 10,
-                offsetY: 10);
-
-            cfg.LifetimeSupervisor = new TimeAndCountBasedLifetimeSupervisor(
-                notificationLifetime: TimeSpan.FromSeconds(3),
-                maximumNotificationCount: MaximumNotificationCount.FromCount(5));
-
-            cfg.Dispatcher = Application.Current.Dispatcher;
-        });
-
-
-
-
+        #region Command
         private ICommand _saveCommand;
 
         public ICommand SaveCommand
@@ -106,6 +81,7 @@ namespace Quanlykho.ViewModel
             }
         }
 
+        #endregion
         public UnitModel Unitview { get; set; }
         private UnitRepository _unitrepository;
         private QuanLyKhoKteamEntities _quanLyKhoKteamEntities;
@@ -138,11 +114,12 @@ namespace Quanlykho.ViewModel
             if (Unitview.Units.Id <= 0)
             {
                 await _unitrepository.AddUnit(Unitview.Units);
-                notifier.ShowSuccess("Them moi thanh cong");
+                Extend.Notification(Notice.ADDSUCCESS, Notice.OFFSETX, Notice.OFFSETY, Notice.OK);
             }
             else
             {
                 await _unitrepository.UpdateUnit(Unitview.Units);
+                Extend.Notification(Notice.EDITSUCCESS, Notice.OFFSETX, Notice.OFFSETY, Notice.OK);
             }
 
             await GetAllAsync(string.Empty, PagedList.PageNumber);
@@ -174,13 +151,16 @@ namespace Quanlykho.ViewModel
             var data = await _unitrepository.GetAllUnit(PagedList);
             //Pagding//
             Unitview.PageSize = data.PageCount;
-           
-            Pagination(pageNumber);
 
-            foreach (var item in data.ListData)
-            {
-                Unitview.UnitModels.Add(item);
-            }
+            //Pagination(pageNumber);
+            bool isEnablePrevious = false;
+            bool isEnableNext = false;
+            int totalpage = Unitview.PageSize;
+            Extend.Pagination(ref isEnablePrevious, ref isEnableNext,ref pageNumber,totalpage);
+            Unitview.IsEnablePrevious = isEnablePrevious;
+            Unitview.IsEnableNext = isEnableNext;
+
+            Unitview.UnitModels = Extend.ToObservableCollection(data.ListData);
         }
 
         private async Task FindDataAsync()
@@ -195,35 +175,6 @@ namespace Quanlykho.ViewModel
                 await GetAllAsync(string.Empty, PagedList.PageNumber);
             }
         }
-
-        private void Pagination(int pageNumber)
-        {
-            if (pageNumber == 1)
-            {
-                Unitview.IsEnablePrevious = false;
-                Unitview.IsEnableNext = true;
-                return;
-            }
-            if (Unitview.PageSize == pageNumber && pageNumber==1)
-            {
-                Unitview.IsEnablePrevious = false;
-                Unitview.IsEnableNext = false;
-                return;
-            }
-            if (pageNumber == Unitview.PageSize && pageNumber > 1)
-            {
-                Unitview.IsEnableNext = false;
-                Unitview.IsEnablePrevious = true;
-                return;
-            }
-            if (pageNumber > 1 && pageNumber < Unitview.PageSize)
-            {
-                Unitview.IsEnableNext = true;
-                Unitview.IsEnablePrevious = true;
-                return;
-            }
-        }
-
         /// <summary>
         /// Remove data unit
         /// </summary>
@@ -231,8 +182,18 @@ namespace Quanlykho.ViewModel
         private async Task RemoveAsync(object o)
         {
             var item = o as Unit;
-            await _unitrepository.DeleteUnit(U => U.Id == item.Id);
-            await GetAllAsync(string.Empty, PagedList.PageNumber);
+
+            if (Extend.SweetAlertResults(Notice.ALERTCAPTION, Notice.ALERTMESSAGE, Notice.OKTEXT,
+                Notice.CANCELTEXT, SweetAlertButton.OKCancel) == SweetAlertResult.OK)
+            {
+                await _unitrepository.DeleteUnit(U => U.Id == item.Id);
+                Extend.Notification(Notice.DELETESUCCESS, Notice.OFFSETX, Notice.OFFSETY, Notice.OK);
+                await GetAllAsync(string.Empty, PagedList.PageNumber);
+            }
+            else
+            {
+                return;
+            }
         }
     }
 }
