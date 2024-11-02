@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using Quanlykho.Common;
+using System.Windows;
 
 namespace Quanlykho
 {
@@ -7,5 +8,6 @@ namespace Quanlykho
     /// </summary>
     public partial class App : Application
     {
+        
     }
 }

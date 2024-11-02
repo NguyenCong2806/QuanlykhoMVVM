@@ -93,6 +93,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Common\Extend.cs" />
+    <Compile Include="Common\Instance.cs" />
+    <Compile Include="Common\Notice.cs" />
     <Compile Include="Interfaces\IAsyncCommand.cs" />
     <Compile Include="Interfaces\IErrorHandler.cs" />
     <Compile Include="Model\PagedList.cs" />
@@ -219,6 +222,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Style\button.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Style\Menu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

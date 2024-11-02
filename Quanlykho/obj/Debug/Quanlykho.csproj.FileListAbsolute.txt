@@ -126,3 +126,6 @@ F:\6. Other\QuanlykhoMVVM\Quanlykho\obj\Debug\Quanlykho.exe
 F:\6. Other\QuanlykhoMVVM\Quanlykho\obj\Debug\Quanlykho.pdb
 F:\6. Other\QuanlykhoMVVM\Quanlykho\bin\Debug\BespokeFusion.dll
 F:\6. Other\QuanlykhoMVVM\Quanlykho\bin\Debug\SweetAlertSharp.dll
+F:\4. wpf\QuanlykhoMVVM\Quanlykho\bin\Debug\BespokeFusion.dll
+F:\4. wpf\QuanlykhoMVVM\Quanlykho\bin\Debug\SweetAlertSharp.dll
+F:\4. wpf\QuanlykhoMVVM\Quanlykho\obj\Debug\Style\button.baml

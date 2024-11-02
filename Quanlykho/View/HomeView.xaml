@@ -8,16 +8,19 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid Width="auto" Background="White">
-        <Button
-        Width="100"
-        Height="50"
-        Command="{Binding ShowButton}"
-        materialDesign:ButtonAssist.CornerRadius="10"
-        IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
-        Style="{StaticResource MaterialDesignRaisedButton}"
-        ToolTip="MaterialDesignRaisedButton with Round Corners">
-            <TextBlock
-            Text="Home" />
-        </Button>
+        <WrapPanel>
+            <Button
+              Width="100"
+              Height="50"
+              Command="{Binding ShowButton}"
+              materialDesign:ButtonAssist.CornerRadius="10"
+              IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+              Style="{StaticResource MaterialDesignRaisedButton}"
+              ToolTip="MaterialDesignRaisedButton with Round Corners">
+                <TextBlock Text="Home" />
+            </Button>
+            <Button Content="Demo" Style="{StaticResource btn-login}" Width="241"/>
+        </WrapPanel>
+      
     </Grid>
 </UserControl>
