@@ -19,7 +19,9 @@
               ToolTip="MaterialDesignRaisedButton with Round Corners">
                 <TextBlock Text="Home" />
             </Button>
-            <Button Content="Demo" Style="{StaticResource btn-login}" Width="241"/>
+            <Button Content = "Round Button!"
+             Template = "{StaticResource ButtonTemplate}" 
+             Width = "150" Margin = "10" />
         </WrapPanel>
       
     </Grid>

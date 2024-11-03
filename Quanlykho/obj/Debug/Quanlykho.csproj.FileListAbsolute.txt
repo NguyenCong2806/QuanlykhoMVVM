@@ -129,3 +129,5 @@ F:\6. Other\QuanlykhoMVVM\Quanlykho\bin\Debug\SweetAlertSharp.dll
 F:\4. wpf\QuanlykhoMVVM\Quanlykho\bin\Debug\BespokeFusion.dll
 F:\4. wpf\QuanlykhoMVVM\Quanlykho\bin\Debug\SweetAlertSharp.dll
 F:\4. wpf\QuanlykhoMVVM\Quanlykho\obj\Debug\Style\button.baml
+F:\4. wpf\QuanlykhoMVVM\Quanlykho\obj\Debug\Login.g.cs
+F:\4. wpf\QuanlykhoMVVM\Quanlykho\obj\Debug\Login.baml
