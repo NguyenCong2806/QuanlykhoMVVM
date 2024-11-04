@@ -124,6 +124,7 @@
     <Compile Include="ViewModel\HomeVM.cs" />
     <Compile Include="ViewModel\InputInfoesVM.cs" />
     <Compile Include="ViewModel\InputsVM.cs" />
+    <Compile Include="ViewModel\LoginVM.cs" />
     <Compile Include="ViewModel\NavigationVM.cs" />
     <Compile Include="ViewModel\ObjectsVM.cs" />
     <Compile Include="ViewModel\OutputInfoesVM.cs" />
@@ -230,6 +231,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Style\button.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Style\LoginStyle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -353,6 +358,7 @@
       <DependentUpon>QuanlykhoModel.edmx</DependentUpon>
       <LastGenOutput>QuanlykhoModel.cs</LastGenOutput>
     </Content>
+    <Resource Include="Resources\Icon\shutdown.png" />
     <Resource Include="Resources\Icon\download.ico" />
     <Resource Include="Resources\Icon\quanlykho.ico" />
     <Resource Include="Image\customer_page.png" />
