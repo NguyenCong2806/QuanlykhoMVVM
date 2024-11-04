@@ -3,39 +3,88 @@
   "WorkspaceRootPath": "F:\\4. wpf\\QuanlykhoMVVM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|f:\\4. wpf\\quanlykhomvvm\\quanlykho\\style\\button.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|solutionrelative:quanlykho\\style\\button.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|f:\\4. wpf\\quanlykhomvvm\\quanlykho\\style\\loginstyle.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|solutionrelative:quanlykho\\style\\loginstyle.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|F:\\4. wpf\\QuanlykhoMVVM\\quanlykho\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|solutionrelative:quanlykho\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|f:\\4. wpf\\quanlykhomvvm\\quanlykho\\login.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|solutionrelative:quanlykho\\login.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|f:\\4. wpf\\quanlykhomvvm\\quanlykho\\style\\loginstyle.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|solutionrelative:quanlykho\\style\\loginstyle.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|f:\\4. wpf\\quanlykhomvvm\\quanlykho\\viewmodel\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|solutionrelative:quanlykho\\viewmodel\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|F:\\4. wpf\\QuanlykhoMVVM\\quanlykho\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|solutionrelative:quanlykho\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|f:\\4. wpf\\quanlykhomvvm\\quanlykho\\view\\homeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|solutionrelative:quanlykho\\view\\homeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|f:\\4. wpf\\quanlykhomvvm\\quanlykho\\view\\homeview.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|F:\\4. wpf\\QuanlykhoMVVM\\quanlykho\\view\\homeview.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|solutionrelative:quanlykho\\view\\homeview.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|f:\\4. wpf\\quanlykhomvvm\\quanlykho\\style\\button.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|F:\\4. wpf\\QuanlykhoMVVM\\quanlykho\\style\\button.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|solutionrelative:quanlykho\\style\\button.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|f:\\4. wpf\\quanlykhomvvm\\quanlykho\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|solutionrelative:quanlykho\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|f:\\4. wpf\\quanlykhomvvm\\quanlykho\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|solutionrelative:quanlykho\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "DockedHeight": 200,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginStyle.xaml",
+              "DocumentMoniker": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\Style\\LoginStyle.xaml",
+              "RelativeDocumentMoniker": "Quanlykho\\Style\\LoginStyle.xaml",
+              "ToolTip": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\Style\\LoginStyle.xaml",
+              "RelativeToolTip": "Quanlykho\\Style\\LoginStyle.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-04T22:50:09.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.xaml",
+              "DocumentMoniker": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\Login.xaml",
+              "RelativeDocumentMoniker": "Quanlykho\\Login.xaml",
+              "ToolTip": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\Login.xaml",
+              "RelativeToolTip": "Quanlykho\\Login.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-03T14:13:25.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginVM.cs",
+              "DocumentMoniker": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\ViewModel\\LoginVM.cs",
+              "RelativeDocumentMoniker": "Quanlykho\\ViewModel\\LoginVM.cs",
+              "ToolTip": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\ViewModel\\LoginVM.cs",
+              "RelativeToolTip": "Quanlykho\\ViewModel\\LoginVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T22:25:03.51Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 5,
@@ -50,19 +99,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Login.xaml",
-              "DocumentMoniker": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\Login.xaml",
-              "RelativeDocumentMoniker": "Quanlykho\\Login.xaml",
-              "ToolTip": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\Login.xaml",
-              "RelativeToolTip": "Quanlykho\\Login.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-03T14:13:25.291Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "HomeView.xaml",
               "DocumentMoniker": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\View\\HomeView.xaml",
               "RelativeDocumentMoniker": "Quanlykho\\View\\HomeView.xaml",
@@ -74,7 +111,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "button.xaml",
               "DocumentMoniker": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\Style\\button.xaml",
               "RelativeDocumentMoniker": "Quanlykho\\Style\\button.xaml",
@@ -92,30 +129,42 @@
       "Orientation": 0,
       "VerticalTabListWidth": 256,
       "FloatingWindowState": {
-        "Id": "741520a9-ce1c-4198-b47e-a7a4cd469c36",
+        "Id": "de8f016c-6833-4847-b898-7d36c55686bd",
         "Display": 0,
-        "X": 113,
-        "Y": 29,
-        "Width": 1258,
-        "Height": 741,
-        "WindowState": 0
+        "X": 112,
+        "Y": 37,
+        "Width": 800,
+        "Height": 631,
+        "WindowState": 2
       },
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "button.xaml",
-              "DocumentMoniker": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\Style\\button.xaml",
-              "RelativeDocumentMoniker": "Quanlykho\\Style\\button.xaml",
-              "ToolTip": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\Style\\button.xaml",
-              "RelativeToolTip": "Quanlykho\\Style\\button.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA/AAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "HomeView.xaml",
+              "DocumentMoniker": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\View\\HomeView.xaml",
+              "RelativeDocumentMoniker": "Quanlykho\\View\\HomeView.xaml",
+              "ToolTip": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\View\\HomeView.xaml",
+              "RelativeToolTip": "Quanlykho\\View\\HomeView.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-03T14:39:30.709Z",
+              "WhenOpened": "2024-11-03T14:39:35.495Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.xaml",
+              "DocumentMoniker": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\Login.xaml",
+              "RelativeDocumentMoniker": "Quanlykho\\Login.xaml",
+              "ToolTip": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\Login.xaml",
+              "RelativeToolTip": "Quanlykho\\Login.xaml",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAlwB4AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-04T13:45:27.334Z",
               "EditorCaption": ""
             }
           ]
@@ -126,13 +175,13 @@
       "Orientation": 0,
       "VerticalTabListWidth": 256,
       "FloatingWindowState": {
-        "Id": "de8f016c-6833-4847-b898-7d36c55686bd",
+        "Id": "3d7c99fb-6ea6-45c3-862e-93a4637debeb",
         "Display": 2,
-        "X": 850,
-        "Y": 226,
+        "X": 845,
+        "Y": 202,
         "Width": 800,
         "Height": 600,
-        "WindowState": 0
+        "WindowState": 2
       },
       "DocumentGroups": [
         {
@@ -141,15 +190,15 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HomeView.xaml",
-              "DocumentMoniker": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\View\\HomeView.xaml",
-              "RelativeDocumentMoniker": "Quanlykho\\View\\HomeView.xaml",
-              "ToolTip": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\View\\HomeView.xaml",
-              "RelativeToolTip": "Quanlykho\\View\\HomeView.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAATAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "LoginStyle.xaml",
+              "DocumentMoniker": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\Style\\LoginStyle.xaml",
+              "RelativeDocumentMoniker": "Quanlykho\\Style\\LoginStyle.xaml",
+              "ToolTip": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\Style\\LoginStyle.xaml",
+              "RelativeToolTip": "Quanlykho\\Style\\LoginStyle.xaml",
+              "ViewState": "AgIAACMAAAAAAAAAAAAmwEIAAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-03T14:39:35.495Z",
+              "WhenOpened": "2024-11-04T22:50:14.308Z",
               "EditorCaption": ""
             }
           ]
