@@ -23,11 +23,6 @@
         <Setter Property="Foreground" Value="#FFFF" />
         <Setter Property="FontSize" Value="15" />
         <Setter Property="FontWeight" Value="SemiBold" />
-        <Setter Property="Effect">
-            <Setter.Value>
-                <DropShadowEffect BlurRadius="5" ShadowDepth="5" Color="#2b2b2b"/>
-            </Setter.Value>
-        </Setter>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Button}">
@@ -47,11 +42,6 @@
                 <Setter Property="Background" Value="#03285e" />
                 <Setter Property="Foreground" Value="#919191" />
                 <Setter Property="Cursor" Value="Hand" />
-                <Setter Property="Effect">
-                    <Setter.Value>
-                        <DropShadowEffect BlurRadius="0" ShadowDepth="0" Color="#2b2b2b"/>
-                    </Setter.Value>
-                </Setter>
             </Trigger>
         </Style.Triggers>
     </Style>
@@ -85,5 +75,25 @@
                 </Setter>
             </Trigger>
         </Style.Triggers>
+    </Style>
+    <Style x:Key="input" TargetType="{x:Type TextBox}">
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="Width" Value="250"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="Height" Value="35"/>
+        <Setter Property="Margin" Value="5"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TextBox}">
+                    <Border Background="{TemplateBinding Background}" 
+                            BorderBrush="Transparent"
+                            CornerRadius="0"
+                            >
+                        <ContentPresenter Content="{TemplateBinding Text}"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
     </Style>
 </ResourceDictionary>

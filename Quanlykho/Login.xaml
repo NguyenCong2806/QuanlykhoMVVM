@@ -10,38 +10,48 @@
         Background="Transparent"
         Icon="./Resources/Icon/quanlykho.ico"
         WindowStyle="None"
+        xmlns:logvm="clr-namespace:Quanlykho.ViewModel"
         Title="Login" Height="450" Width="850">
+    <Window.DataContext>
+        <logvm:LoginVM />
+    </Window.DataContext>
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="1.5*"/>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="1.5*" />
         </Grid.ColumnDefinitions>
-        <Border Grid.Column="0" 
-                Background="#2f8d46" 
+        <Border Grid.Column="0"
+                Background="#2f8d46"
                 CornerRadius="20 0 0 20"
                 BorderThickness="0">
-            <WrapPanel Orientation="Vertical" 
-                        HorizontalAlignment="Center" 
+            <WrapPanel Orientation="Vertical"
+                        HorizontalAlignment="Center"
                         VerticalAlignment="Center">
-                <TextBlock Text="Sign Up" Style="{StaticResource textTitel}"/>
-                <TextBlock Text="SignUp Now To Connect With Us!" Style="{StaticResource textNormal}"/>
-                <Button Content="Đăng ký" Style="{StaticResource btnlogin}"/>
+                <TextBlock Text="Sign Up" Style="{StaticResource textTitel}" />
+                <TextBlock Text="SignUp Now To Connect With Us!" Style="{StaticResource textNormal}" />
+                <Button Content="Đăng ký" Style="{StaticResource btnlogin}" />
             </WrapPanel>
         </Border>
-        <Border Grid.Column="1" 
-        Background="#f2f2f2" 
+        <Border Grid.Column="1"
+        Background="#f2f2f2"
         CornerRadius="0 20 20 0"
         BorderThickness="0">
             <Grid>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="10.5*" />
                 </Grid.RowDefinitions>
                 <WrapPanel Orientation="Vertical" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center">
-                    <Button Style="{StaticResource btnClose}">
+                    <Button Style="{StaticResource btnClose}" Command="{Binding ShowButton}" ToolTip="Tắt ứng dụng">
                         <Image Width="30" Height="30" Source="Resources/Icon/shutdown.png"></Image>
                     </Button>
                 </WrapPanel>
+                <StackPanel Orientation="Horizontal" Grid.Row="1"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center">
+                
+                 
+                </StackPanel>
             </Grid>
         </Border>
     </Grid>

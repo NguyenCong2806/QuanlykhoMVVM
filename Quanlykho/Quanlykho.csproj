@@ -358,6 +358,7 @@
       <DependentUpon>QuanlykhoModel.edmx</DependentUpon>
       <LastGenOutput>QuanlykhoModel.cs</LastGenOutput>
     </Content>
+    <Resource Include="Resources\Icon\user.png" />
     <Resource Include="Resources\Icon\shutdown.png" />
     <Resource Include="Resources\Icon\download.ico" />
     <Resource Include="Resources\Icon\quanlykho.ico" />
