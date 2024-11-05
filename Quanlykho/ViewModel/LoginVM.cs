@@ -45,7 +45,8 @@ namespace Quanlykho.ViewModel
         private async Task ShowMainView()
         {
             MainWindow mainWindow = new MainWindow();
-            mainWindow.ShowDialog();
+            mainWindow.Show();
+            
             await Task.Yield();
         }
     }
