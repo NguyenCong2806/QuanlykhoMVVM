@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-F:\4. wpf\QuanlykhoMVVM\Quanlykho\obj\Debug\
+F:\6. Other\QuanlykhoMVVM\Quanlykho\obj\Debug\
 Quanlykho
 none
 false
 DEBUG;TRACE
-F:\4. wpf\QuanlykhoMVVM\Quanlykho\App.xaml
+F:\6. Other\QuanlykhoMVVM\Quanlykho\App.xaml
 19843885611
 2-1052707305
 65-1242116207
-281377503955
+28-246330683
 Login.xaml;MainWindow.xaml;Style\button.xaml;Style\LoginStyle.xaml;Style\Menu.xaml;Style\Sliderbar.xaml;Utilities\DataTemplate.xaml;View\CustomersView.xaml;View\CustomerView.xaml;View\HomeView.xaml;View\InputInfoesView.xaml;View\InputsView.xaml;View\ObjectsView.xaml;View\OutputInfoesView.xaml;View\OutputsView.xaml;View\SuplierView.xaml;View\UnitView.xaml;View\UserRolesView.xaml;View\UsersView.xaml;
 
 False

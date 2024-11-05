@@ -121,7 +121,6 @@ F:\6. Other\QuanlykhoMVVM\Quanlykho\obj\Debug\Quanlykho.g.resources
 F:\6. Other\QuanlykhoMVVM\Quanlykho\obj\Debug\Quanlykho.Properties.Resources.resources
 F:\6. Other\QuanlykhoMVVM\Quanlykho\obj\Debug\Quanlykho.csproj.GenerateResource.cache
 F:\6. Other\QuanlykhoMVVM\Quanlykho\obj\Debug\Quanlykho.csproj.CoreCompileInputs.cache
-F:\6. Other\QuanlykhoMVVM\Quanlykho\obj\Debug\Quanlykho.csproj.CopyComplete
 F:\6. Other\QuanlykhoMVVM\Quanlykho\obj\Debug\Quanlykho.exe
 F:\6. Other\QuanlykhoMVVM\Quanlykho\obj\Debug\Quanlykho.pdb
 F:\6. Other\QuanlykhoMVVM\Quanlykho\bin\Debug\BespokeFusion.dll
@@ -132,3 +131,8 @@ F:\4. wpf\QuanlykhoMVVM\Quanlykho\obj\Debug\Style\button.baml
 F:\4. wpf\QuanlykhoMVVM\Quanlykho\obj\Debug\Login.g.cs
 F:\4. wpf\QuanlykhoMVVM\Quanlykho\obj\Debug\Login.baml
 F:\4. wpf\QuanlykhoMVVM\Quanlykho\obj\Debug\Style\LoginStyle.baml
+F:\6. Other\QuanlykhoMVVM\Quanlykho\obj\Debug\Style\button.baml
+F:\6. Other\QuanlykhoMVVM\Quanlykho\obj\Debug\Style\LoginStyle.baml
+F:\6. Other\QuanlykhoMVVM\Quanlykho\obj\Debug\Login.g.cs
+F:\6. Other\QuanlykhoMVVM\Quanlykho\obj\Debug\Login.baml
+F:\6. Other\QuanlykhoMVVM\Quanlykho\obj\Debug\Quanlykho.csproj.Up2Date
