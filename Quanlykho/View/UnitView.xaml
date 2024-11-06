@@ -5,11 +5,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:unitvm="clr-namespace:Quanlykho.ViewModel"
+             xmlns:i = "http://schemas.microsoft.com/expression/2010/interactivity" 
+             xmlns:ei = "http://schemas.microsoft.com/expression/2010/interactions" 
              mc:Ignorable="d"
              d:DesignHeight="450" d:DesignWidth="920">
     <UserControl.DataContext>
         <unitvm:UnitVM />
     </UserControl.DataContext>
+    
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction Command="{Binding GetDataCommand}"/>
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+    
     <Grid Width="auto" Background="White">
         <Grid.RowDefinitions>
             <RowDefinition Height="60" />

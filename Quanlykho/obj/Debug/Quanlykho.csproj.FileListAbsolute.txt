@@ -136,3 +136,7 @@ F:\6. Other\QuanlykhoMVVM\Quanlykho\obj\Debug\Style\LoginStyle.baml
 F:\6. Other\QuanlykhoMVVM\Quanlykho\obj\Debug\Login.g.cs
 F:\6. Other\QuanlykhoMVVM\Quanlykho\obj\Debug\Login.baml
 F:\6. Other\QuanlykhoMVVM\Quanlykho\obj\Debug\Quanlykho.csproj.Up2Date
+F:\6. Other\QuanlykhoMVVM\Quanlykho\bin\Debug\Microsoft.Expression.Interactions.dll
+F:\6. Other\QuanlykhoMVVM\Quanlykho\bin\Debug\System.Windows.Interactivity.dll
+F:\6. Other\QuanlykhoMVVM\Quanlykho\bin\Debug\Microsoft.Expression.Interactions.xml
+F:\6. Other\QuanlykhoMVVM\Quanlykho\bin\Debug\System.Windows.Interactivity.xml
