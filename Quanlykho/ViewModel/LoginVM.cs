@@ -1,4 +1,5 @@
-﻿using Quanlykho.Utilities;
+﻿using Quanlykho.Model;
+using Quanlykho.Utilities;
 using System.Threading.Tasks;
 using System.Web.UI.WebControls;
 using System.Windows;
@@ -8,6 +9,7 @@ namespace Quanlykho.ViewModel
 {
     public class LoginVM
     {
+        public bool IsLogin { get; set; }=false;
         private ICommand _showButton;
 
         public ICommand ShowButton
@@ -20,21 +22,13 @@ namespace Quanlykho.ViewModel
                 return _showButton;
             }
         }
-        private ICommand _loginCommand;
-
-        public ICommand LoginComnand
-        {
-            get
-            {
-                if (_loginCommand == null)
-                    _loginCommand = new AsyncRelayCommand<object>(param => ShowMainView(), null);
-
-                return _loginCommand;
-            }
-        }
-
+        public ICommand LoginComnand { get; set; }
+        public LoginModel LoginModel { get; set; }
         public LoginVM()
         {
+            IsLogin = false;
+            LoginModel = new LoginModel();
+            LoginComnand = new AsyncRelayCommand<object>(param => ShowMainView(param), null);
         }
 
         private async Task CloseApp()
@@ -42,12 +36,15 @@ namespace Quanlykho.ViewModel
             Application.Current.Shutdown();
             await Task.Yield();
         }
-        private async Task ShowMainView()
+        private async Task ShowMainView(object obj)
         {
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.Show();
+            var loginview = obj as Window;
+            if (loginview == null) return;
             
-            await Task.Yield();
+            IsLogin = true;
+            loginview.Close();
+
+             await Task.Yield();
         }
     }
 }

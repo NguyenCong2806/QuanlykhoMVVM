@@ -1,4 +1,5 @@
 ﻿using Quanlykho.Utilities;
+using System.Dynamic;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
@@ -26,6 +27,7 @@ namespace Quanlykho.ViewModel
         public ICommand UserRolesCommand { get; set; }
         public ICommand UsersCommand { get; set; }
         public ICommand SuplierCommand { get; set; }
+        public ICommand ViewChangeCommand { get; set; }
 
         private async Task Home(object obj)
         {
@@ -90,14 +92,40 @@ namespace Quanlykho.ViewModel
             Application.Current.Shutdown();
             await Task.Yield();
         }
+        public bool Isloaded { get; set; } = false;
+        private async Task ViewChanged(object obj)
+        {
+            Window window = obj as Window;
+            if (!Isloaded)
+            {
+                Isloaded = true;
+                window.Hide();
+                Login loginview = new Login();
+                loginview.ShowDialog();
+                var login = loginview.DataContext as LoginVM;
+                if(login==null) return;
+                if (login.IsLogin)
+                {
+                    window.Show();
+                }
+                else
+                {
+                    window.Close();
+                }
+               
+            }
+            await Task.Yield();
+        }
         public NavigationVM()
         {
-            HomeCommand = new AsyncRelayCommand<HomeVM>(Home,null,null);
+            HomeCommand = new AsyncRelayCommand<HomeVM>(Home, null, null);
             UnitCommand = new AsyncRelayCommand<UnitVM>(Unit, null, null);
             SuplierCommand = new AsyncRelayCommand<SuplierVM>(Suplier, null, null);
             ShutdownCommand = new AsyncRelayCommand<object>(Shutdown, null, null);
+            ViewChangeCommand = new AsyncRelayCommand<object>(ViewChanged, null, null);
             // Startup Page
             CurrentView = new HomeVM();
+
         }
     }
 }

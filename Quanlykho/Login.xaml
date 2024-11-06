@@ -9,7 +9,10 @@
         AllowsTransparency="True"
         Background="Transparent"
         Icon="./Resources/Icon/quanlykho.ico"
+        xmlns:i = "http://schemas.microsoft.com/expression/2010/interactivity" 
+        xmlns:ei = "http://schemas.microsoft.com/expression/2010/interactions" 
         WindowStyle="None"
+        x:Name="loginview"
         xmlns:logvm="clr-namespace:Quanlykho.ViewModel"
         Title="Login" Height="450" Width="850">
     <Window.DataContext>
@@ -72,9 +75,15 @@
                                 <PasswordBox Style="{StaticResource txtPassword}"/>
                             </WrapPanel>
                         </Border>
-                        <Button Grid.Row="2" Command="{Binding LoginComnand}" Content="Đăng nhập" Style="{StaticResource btnLogin}" />
+                        <Button Grid.Row="2" Command="{Binding LoginComnand}"
+                                CommandParameter="{Binding ElementName=loginview}"
+                                Content="Đăng nhập" Style="{StaticResource btnLogin}" />
+                        
                     </StackPanel>
-                    
+                    <StackPanel Grid.Row="3" HorizontalAlignment="Center" 
+                            VerticalAlignment="Center">
+                        <TextBlock Style="{StaticResource textWarning}" TextAlignment="Center" Text="Tài khoản không đúng!"/>
+                    </StackPanel>
                 </Grid>
             </Grid>
         </Border>

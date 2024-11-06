@@ -6,17 +6,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:Menu="clr-namespace:Quanlykho.Utilities"
         xmlns:vm="clr-namespace:Quanlykho.ViewModel"
+        xmlns:i = "http://schemas.microsoft.com/expression/2010/interactivity" 
+        xmlns:ei = "http://schemas.microsoft.com/expression/2010/interactions" 
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
         AllowsTransparency="True"
         Background="Transparent"
         Icon="./Resources/Icon/quanlykho.ico"
         WindowStyle="None"
+        Name="mainview"
         Title="MainWindow" Height="630" Width="1200">
 
     <Window.DataContext>
         <vm:NavigationVM />
     </Window.DataContext>
+    
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction Command="{Binding ViewChangeCommand}" CommandParameter="{Binding ElementName=mainview}"/>
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+    
     <Border CornerRadius="10" Padding="20" Background="White" BorderThickness="1" BorderBrush="#a3a3a3">
         <Grid Background="White">
             <Grid.ColumnDefinitions>

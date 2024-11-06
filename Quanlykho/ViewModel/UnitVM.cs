@@ -80,7 +80,17 @@ namespace Quanlykho.ViewModel
                 return _removeDataCommand;
             }
         }
+        private ICommand _getAllData;
+        public ICommand GetDataCommand
+        {
+            get
+            {
+                if (_getAllData == null)
+                    _getAllData = new AsyncRelayCommand<object>(param => GetAll(), null);
 
+                return _getAllData;
+            }
+        }
         #endregion
         public UnitModel Unitview { get; set; }
         private UnitRepository _unitrepository;
@@ -100,10 +110,9 @@ namespace Quanlykho.ViewModel
             };
             _quanLyKhoKteamEntities = new QuanLyKhoKteamEntities();
             _unitrepository = new UnitRepository(_quanLyKhoKteamEntities);
-            GetAll();
         }
 
-        private async void GetAll()
+        private async Task GetAll()
         {
             PagedList.PageNumber = 1;
             await GetAllAsync(string.Empty, PagedList.PageNumber);

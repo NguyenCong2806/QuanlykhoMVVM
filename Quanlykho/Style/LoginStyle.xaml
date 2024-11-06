@@ -16,7 +16,13 @@
         <Setter Property="Foreground" Value="#eaeaea" />
         <Setter Property="Margin" Value="0 20" />
     </Style>
-
+    <Style x:Key="textWarning" TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="TextAlignment" Value="Center" />
+        <Setter Property="Foreground" Value="#ff0033" />
+        <Setter Property="Margin" Value="0 20" />
+    </Style>
     <Style x:Key="btnlogin" TargetType="{x:Type Button}">
         <Setter Property="Background" Value="#1750a8" />
         <Setter Property="Width" Value="200" />
