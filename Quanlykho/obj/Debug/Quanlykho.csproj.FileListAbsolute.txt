@@ -140,3 +140,7 @@ F:\6. Other\QuanlykhoMVVM\Quanlykho\bin\Debug\Microsoft.Expression.Interactions.
 F:\6. Other\QuanlykhoMVVM\Quanlykho\bin\Debug\System.Windows.Interactivity.dll
 F:\6. Other\QuanlykhoMVVM\Quanlykho\bin\Debug\Microsoft.Expression.Interactions.xml
 F:\6. Other\QuanlykhoMVVM\Quanlykho\bin\Debug\System.Windows.Interactivity.xml
+F:\4. wpf\QuanlykhoMVVM\Quanlykho\bin\Debug\Microsoft.Expression.Interactions.dll
+F:\4. wpf\QuanlykhoMVVM\Quanlykho\bin\Debug\System.Windows.Interactivity.dll
+F:\4. wpf\QuanlykhoMVVM\Quanlykho\bin\Debug\Microsoft.Expression.Interactions.xml
+F:\4. wpf\QuanlykhoMVVM\Quanlykho\bin\Debug\System.Windows.Interactivity.xml
