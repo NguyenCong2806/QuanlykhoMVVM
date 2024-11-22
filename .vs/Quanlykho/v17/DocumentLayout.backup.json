@@ -3,18 +3,22 @@
   "WorkspaceRootPath": "F:\\4. wpf\\QuanlykhoMVVM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|f:\\4. wpf\\quanlykhomvvm\\quanlykho\\utilities\\btn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|solutionrelative:quanlykho\\utilities\\btn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|f:\\4. wpf\\quanlykhomvvm\\quanlykho\\view\\unitview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|solutionrelative:quanlykho\\view\\unitview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|F:\\4. wpf\\QuanlykhoMVVM\\quanlykho\\viewmodel\\unitvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB3CA832-4554-4657-ACA0-B10728589CC1}|Quanlykho\\Quanlykho.csproj|solutionrelative:quanlykho\\viewmodel\\unitvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 1,
+      "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 200,
-          "SelectedChildIndex": 1,
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,15 +26,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Btn.cs",
-              "DocumentMoniker": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\Utilities\\Btn.cs",
-              "RelativeDocumentMoniker": "Quanlykho\\Utilities\\Btn.cs",
-              "ToolTip": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\Utilities\\Btn.cs",
-              "RelativeToolTip": "Quanlykho\\Utilities\\Btn.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "UnitVM.cs",
+              "DocumentMoniker": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\ViewModel\\UnitVM.cs",
+              "RelativeDocumentMoniker": "Quanlykho\\ViewModel\\UnitVM.cs",
+              "ToolTip": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\ViewModel\\UnitVM.cs",
+              "RelativeToolTip": "Quanlykho\\ViewModel\\UnitVM.cs",
+              "ViewState": "AgIAALQAAAAAAAAAAAAAAM0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T14:42:33.586Z",
+              "WhenOpened": "2024-11-12T14:31:09.122Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UnitView.xaml",
+              "DocumentMoniker": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\View\\UnitView.xaml",
+              "RelativeDocumentMoniker": "Quanlykho\\View\\UnitView.xaml",
+              "ToolTip": "F:\\4. wpf\\QuanlykhoMVVM\\Quanlykho\\View\\UnitView.xaml",
+              "RelativeToolTip": "Quanlykho\\View\\UnitView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-12T14:30:47.677Z",
               "EditorCaption": ""
             }
           ]
